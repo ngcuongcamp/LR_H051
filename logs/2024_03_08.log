@@ -1,0 +1,153 @@
+2024-03-08 13:50:36,278 - ERROR - Camera Error
+2024-03-08 13:50:36,278 - ERROR - Camera Error
+2024-03-08 13:50:37,338 - ERROR - Can't connect with MES APP
+2024-03-08 13:50:37,338 - ERROR - CAM ERROR
+2024-03-08 15:07:48,254 - ERROR - Camera Error
+2024-03-08 15:07:48,254 - ERROR - Camera Error
+2024-03-08 15:07:48,597 - ERROR - Can't connect with MES APP
+2024-03-08 15:07:48,597 - ERROR - CAM ERROR
+2024-03-08 15:07:48,597 - ERROR - CAM ERROR
+2024-03-08 15:08:12,847 - ERROR - Can't connect with MES APP
+2024-03-08 15:10:57,571 - ERROR - Can't connect with MES APP
+2024-03-08 15:11:21,710 - ERROR - Can't connect with MES APP
+2024-03-08 15:11:38,336 - ERROR - Can't connect with MES APP
+2024-03-08 15:11:39,024 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-03-08 15:11:39,024 - INFO - --> Received scan signal from PLC
+2024-03-08 15:11:39,025 - INFO - --> ------ SCAN SIGNAL -------
+2024-03-08 15:11:39,467 - INFO - --> RESULT SCAN
+2024-03-08 15:11:39,468 - ERROR - FAILED
+2024-03-08 15:11:39,468 - ERROR - ------FAIL SCAN-------
+2024-03-08 15:11:39,468 - ERROR - Data SN: None
+2024-03-08 15:11:39,468 - ERROR - Data FIXTURE: None
+2024-03-08 15:11:46,386 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-03-08 15:11:46,386 - INFO - --> Received scan signal from PLC
+2024-03-08 15:11:46,386 - INFO - --> ------ SCAN SIGNAL -------
+2024-03-08 15:11:46,803 - INFO - --> RESULT SCAN
+2024-03-08 15:11:46,803 - ERROR - FAILED
+2024-03-08 15:11:46,803 - ERROR - ------FAIL SCAN-------
+2024-03-08 15:11:46,803 - ERROR - Data SN: None
+2024-03-08 15:11:46,803 - ERROR - Data FIXTURE: None
+2024-03-08 15:13:15,297 - ERROR - Can't connect with MES APP
+2024-03-08 15:13:16,194 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-03-08 15:13:16,194 - INFO - --> Received scan signal from PLC
+2024-03-08 15:13:16,194 - INFO - --> ------ SCAN SIGNAL -------
+2024-03-08 15:13:16,283 - INFO - --> RESULT SCAN
+2024-03-08 15:13:16,283 - INFO - PASS SCAN
+2024-03-08 15:13:16,284 - INFO - ----------- SEND TO MES -----------
+2024-03-08 15:13:16,411 - WARNING - Wrong PLC Signal
+2024-03-08 15:13:16,736 - INFO - --> Send Data SN:  http://en.m.wikipedia.org
+2024-03-08 15:13:16,746 - WARNING - Wrong PLC Signal
+2024-03-08 15:13:51,183 - ERROR - Can't connect with MES APP
+2024-03-08 15:14:02,495 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-03-08 15:14:02,495 - INFO - --> Received scan signal from PLC
+2024-03-08 15:14:02,495 - INFO - --> ------ SCAN SIGNAL -------
+2024-03-08 15:14:02,520 - INFO - --> RESULT SCAN
+2024-03-08 15:14:02,521 - INFO - PASS SCAN
+2024-03-08 15:14:02,521 - INFO - ----------- SEND TO MES -----------
+2024-03-08 15:14:02,636 - WARNING - Wrong PLC Signal
+2024-03-08 15:14:02,651 - WARNING - Wrong PLC Signal
+2024-03-08 15:14:02,981 - INFO - --> Send Data SN:  http://en.m.wikipedia.org
+2024-03-08 15:14:02,986 - WARNING - Wrong PLC Signal
+2024-03-08 15:15:51,194 - WARNING - Wrong PLC Signal
+2024-03-08 15:15:53,066 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-03-08 15:15:53,066 - INFO - --> Received scan signal from PLC
+2024-03-08 15:15:53,066 - INFO - --> ------ SCAN SIGNAL -------
+2024-03-08 15:15:53,083 - INFO - --> RESULT SCAN
+2024-03-08 15:15:53,084 - INFO - PASS SCAN
+2024-03-08 15:15:53,084 - INFO - ----------- SEND TO MES -----------
+2024-03-08 15:15:53,205 - WARNING - Wrong PLC Signal
+2024-03-08 15:15:53,220 - WARNING - Wrong PLC Signal
+2024-03-08 15:15:53,395 - INFO - --> Send Data SN:  http://en.m.wikipedia.org
+2024-03-08 15:15:53,398 - WARNING - Wrong PLC Signal
+2024-03-08 15:16:17,689 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-03-08 15:16:17,689 - INFO - --> Received scan signal from PLC
+2024-03-08 15:16:17,689 - INFO - --> ------ SCAN SIGNAL -------
+2024-03-08 15:16:17,713 - INFO - --> RESULT SCAN
+2024-03-08 15:16:17,713 - INFO - PASS SCAN
+2024-03-08 15:16:17,714 - INFO - ----------- SEND TO MES -----------
+2024-03-08 15:16:17,830 - WARNING - Wrong PLC Signal
+2024-03-08 15:16:17,845 - WARNING - Wrong PLC Signal
+2024-03-08 15:16:18,027 - INFO - --> Send Data SN:  http://en.m.wikipedia.org
+2024-03-08 15:16:18,037 - WARNING - Wrong PLC Signal
+2024-03-08 15:16:45,221 - ERROR - Can't connect with MES APP
+2024-03-08 15:16:49,595 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-03-08 15:16:49,595 - INFO - --> Received scan signal from PLC
+2024-03-08 15:16:49,595 - INFO - --> ------ SCAN SIGNAL -------
+2024-03-08 15:16:49,620 - INFO - --> RESULT SCAN
+2024-03-08 15:16:49,621 - INFO - PASS SCAN
+2024-03-08 15:16:49,621 - INFO - ----------- SEND TO MES -----------
+2024-03-08 15:16:49,737 - WARNING - Wrong PLC Signal
+2024-03-08 15:16:49,752 - WARNING - Wrong PLC Signal
+2024-03-08 15:16:50,081 - INFO - --> Send Data SN:  http://en.m.wikipedia.org
+2024-03-08 15:16:50,090 - WARNING - Wrong PLC Signal
+2024-03-08 15:17:31,791 - ERROR - Can't connect with MES APP
+2024-03-08 15:17:34,364 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-03-08 15:17:34,364 - INFO - --> Received scan signal from PLC
+2024-03-08 15:17:34,364 - INFO - --> ------ SCAN SIGNAL -------
+2024-03-08 15:17:34,389 - INFO - --> RESULT SCAN
+2024-03-08 15:17:34,389 - INFO - PASS SCAN
+2024-03-08 15:17:34,389 - INFO - ----------- SEND TO MES -----------
+2024-03-08 15:17:34,504 - WARNING - Wrong PLC Signal
+2024-03-08 15:17:34,519 - WARNING - Wrong PLC Signal
+2024-03-08 15:17:34,839 - WARNING - Wrong PLC Signal
+2024-03-08 15:17:34,839 - INFO - --> Send Data SN:  http://en.m.wikipedia.org
+2024-03-08 15:18:11,019 - ERROR - Can't connect with MES APP
+2024-03-08 15:18:14,817 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-03-08 15:18:14,817 - INFO - --> Received scan signal from PLC
+2024-03-08 15:18:14,817 - INFO - --> ------ SCAN SIGNAL -------
+2024-03-08 15:18:14,845 - INFO - --> RESULT SCAN
+2024-03-08 15:18:14,846 - INFO - PASS SCAN
+2024-03-08 15:18:14,846 - INFO - ----------- SEND TO MES -----------
+2024-03-08 15:18:14,973 - WARNING - Wrong PLC Signal
+2024-03-08 15:18:15,298 - INFO - --> Send Data SN:  http://en.m.wikipedia.org
+2024-03-08 15:18:15,308 - WARNING - Wrong PLC Signal
+2024-03-08 15:21:12,348 - ERROR - Can't connect with MES APP
+2024-03-08 15:21:14,798 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-03-08 15:21:14,798 - INFO - --> Received scan signal from PLC
+2024-03-08 15:21:14,798 - INFO - --> ------ SCAN SIGNAL -------
+2024-03-08 15:21:14,824 - INFO - --> RESULT SCAN
+2024-03-08 15:21:14,824 - INFO - PASS SCAN
+2024-03-08 15:21:14,824 - INFO - ----------- SEND TO MES -----------
+2024-03-08 15:21:14,938 - WARNING - Wrong PLC Signal
+2024-03-08 15:21:14,954 - WARNING - Wrong PLC Signal
+2024-03-08 15:21:15,279 - INFO - --> Send Data SN:  http://en.m.wikipedia.org
+2024-03-08 15:21:15,284 - WARNING - Wrong PLC Signal
+2024-03-08 15:22:01,809 - ERROR - Can't connect with MES APP
+2024-03-08 15:22:05,600 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-03-08 15:22:05,600 - INFO - --> Received scan signal from PLC
+2024-03-08 15:22:05,600 - INFO - --> ------ SCAN SIGNAL -------
+2024-03-08 15:22:05,626 - INFO - --> RESULT SCAN
+2024-03-08 15:22:05,626 - INFO - PASS SCAN
+2024-03-08 15:22:05,626 - INFO - ----------- SEND TO MES -----------
+2024-03-08 15:22:05,741 - WARNING - Wrong PLC Signal
+2024-03-08 15:22:05,756 - WARNING - Wrong PLC Signal
+2024-03-08 15:22:06,077 - INFO - --> Send Data SN:  http://en.m.wikipedia.org
+2024-03-08 15:22:06,092 - WARNING - Wrong PLC Signal
+2024-03-08 15:22:09,734 - INFO - Information: Please scan lot no
+
+2024-03-08 15:22:31,113 - ERROR - Can't connect with MES APP
+2024-03-08 15:22:31,981 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-03-08 15:22:31,981 - INFO - --> Received scan signal from PLC
+2024-03-08 15:22:31,981 - INFO - --> ------ SCAN SIGNAL -------
+2024-03-08 15:22:32,007 - INFO - --> RESULT SCAN
+2024-03-08 15:22:32,007 - INFO - PASS SCAN
+2024-03-08 15:22:32,007 - INFO - ----------- SEND TO MES -----------
+2024-03-08 15:22:32,124 - WARNING - Wrong PLC Signal
+2024-03-08 15:22:32,138 - WARNING - Wrong PLC Signal
+2024-03-08 15:22:32,457 - INFO - --> Send Data SN:  http://en.m.wikipedia.org
+2024-03-08 15:22:32,458 - WARNING - Wrong PLC Signal
+2024-03-08 15:22:35,795 - INFO - Information: Please scan lot no
+
+2024-03-08 15:22:36,109 - INFO - --> Send Data FIXTURE:  http://en.m.wikipedia.org
