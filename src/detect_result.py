@@ -52,8 +52,8 @@ def capture_text_result():
     return screenshot
 
 
-scan_lot_no_temp = cv2.imread("./pass_1.png")
-pass_temp = cv2.imread("./pass_2.png")
+scan_lot_no_temp = cv2.imread("./temp/pass_1.png")
+pass_temp = cv2.imread("./temp/pass_2.png")
 repetitive_operation_temp = cv2.imread("./repetitive_operation.png")
 
 
@@ -102,5 +102,5 @@ def find_position_of_template(option):
         return False
 
 
-is_matching = find_position_of_template(1)
-print(is_matching)
+# is_matching = find_position_of_template(1)
+# print(is_matching)

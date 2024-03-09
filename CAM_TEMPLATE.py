@@ -1,5 +1,3 @@
-# date release: 2024-02-20
-
 from libs.libs import *
 from src.utilities import *
 from src.Thread_PLC import PLCThread
@@ -93,7 +91,7 @@ class MyApplication(QMainWindow):
         i = 0
         while i < self.SCAN_LIMIT:
             i = i + 1
-            # image = cv2.imread("./Datamatrix.png")
+            # image = cv2.imread("./temp/Datamatrix.png")
             # frames = process_frame1(self, image)
             # frames2 = process_frame2(self, image)
             frames = process_frame1(self, self.frame1)

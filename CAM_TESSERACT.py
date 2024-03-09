@@ -1,5 +1,3 @@
-# date release: 2024-02-20
-
 from libs.libs import *
 from src.utilities import *
 from src.Thread_PLC import PLCThread
