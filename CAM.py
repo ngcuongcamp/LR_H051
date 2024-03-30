@@ -330,6 +330,7 @@ class MyApplication(QMainWindow):
                 and not self.THREAD_CAMERA_1.is_running
                 and not self.THREAD_CAMERA_2.is_running
             ):
+                print("re open")
                 self.open_camera_thread()
         except Exception as E:
             cmd_printer("ERROR", str(E))
