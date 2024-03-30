@@ -1,0 +1,10 @@
+2024-03-30 15:25:31,015 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-03-30 15:25:31,015 - INFO - --> Received scan signal from PLC
+2024-03-30 15:25:31,015 - INFO - --> ------ SCAN SIGNAL -------
+2024-03-30 15:25:31,199 - INFO - --> RESULT SCAN
+2024-03-30 15:25:31,199 - INFO - PASS SCAN
+2024-03-30 15:25:31,199 - INFO - ----------- SEND TO MES -----------
+2024-03-30 15:25:31,324 - WARNING - Received signal PLC when program is processing.
+2024-03-30 15:25:31,633 - INFO - --> Send Data SN:  11111111111111111
+2024-03-30 15:25:31,644 - WARNING - Received signal PLC when program is processing.

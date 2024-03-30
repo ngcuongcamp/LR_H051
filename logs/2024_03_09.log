@@ -1,0 +1,47 @@
+2024-03-09 14:27:51,744 - ERROR - Can't connect with MES APP
+2024-03-09 14:27:54,439 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-03-09 14:27:54,439 - INFO - --> Received scan signal from PLC
+2024-03-09 14:27:54,439 - INFO - --> ------ SCAN SIGNAL -------
+2024-03-09 14:27:57,289 - INFO - --> RESULT SCAN
+2024-03-09 14:27:57,289 - ERROR - FAILED
+2024-03-09 14:27:57,289 - ERROR - ------FAIL SCAN-------
+2024-03-09 14:27:57,290 - ERROR - Data SN: None
+2024-03-09 14:27:57,290 - ERROR - Data FIXTURE: None
+2024-03-09 14:28:34,257 - ERROR - Can't connect with MES APP
+2024-03-09 14:28:35,920 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-03-09 14:28:35,920 - INFO - --> Received scan signal from PLC
+2024-03-09 14:28:35,920 - INFO - --> ------ SCAN SIGNAL -------
+2024-03-09 14:28:36,404 - INFO - --> RESULT SCAN
+2024-03-09 14:28:36,405 - INFO - PASS SCAN
+2024-03-09 14:28:36,405 - INFO - ----------- SEND TO MES -----------
+2024-03-09 14:28:36,519 - WARNING - Wrong PLC Signal
+2024-03-09 14:28:36,535 - WARNING - Wrong PLC Signal
+2024-03-09 14:28:36,550 - WARNING - Wrong PLC Signal
+2024-03-09 14:28:36,869 - INFO - --> Send Data SN:    hhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+2024-03-09 14:28:36,884 - WARNING - Wrong PLC Signal
+2024-03-09 14:28:37,096 - INFO - PASS TO CHECK SN CODE
+2024-03-09 14:28:37,222 - WARNING - Wrong PLC Signal
+2024-03-09 14:28:37,239 - WARNING - Wrong PLC Signal
+2024-03-09 14:28:37,412 - INFO - --> Send Data FIXTURE:    hhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+2024-03-09 14:28:37,443 - WARNING - Wrong PLC Signal
+2024-03-09 14:28:40,644 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-03-09 14:28:40,644 - INFO - --> Received scan signal from PLC
+2024-03-09 14:28:40,644 - INFO - --> ------ SCAN SIGNAL -------
+2024-03-09 14:28:41,104 - INFO - --> RESULT SCAN
+2024-03-09 14:28:41,104 - INFO - PASS SCAN
+2024-03-09 14:28:41,104 - INFO - ----------- SEND TO MES -----------
+2024-03-09 14:28:41,228 - WARNING - Wrong PLC Signal
+2024-03-09 14:28:41,416 - INFO - --> Send Data SN:    hhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+2024-03-09 14:28:41,422 - WARNING - Wrong PLC Signal
+2024-03-09 14:28:41,628 - INFO - PASS TO CHECK SN CODE
+2024-03-09 14:28:41,744 - WARNING - Wrong PLC Signal
+2024-03-09 14:28:41,761 - WARNING - Wrong PLC Signal
+2024-03-09 14:28:41,942 - INFO - --> Send Data FIXTURE:    hhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+2024-03-09 14:28:41,974 - WARNING - Wrong PLC Signal
+2024-03-09 14:28:43,380 - INFO - PASS TO CHECK FIXTURE CODE
+2024-03-09 14:28:43,380 - INFO - ------PASS MES-------
+2024-03-09 14:28:43,380 - INFO - Data SN:   hhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+2024-03-09 14:28:43,380 - INFO - Data FIXTURE:   hhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
