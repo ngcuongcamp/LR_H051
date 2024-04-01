@@ -297,6 +297,7 @@ class MyApplication(QMainWindow):
         self.state_ui = None
 
     def open_camera_thread(self):
+
         # thread camera 1
         self.THREAD_CAMERA_1 = CameraThread(self.ID_C1)
         self.THREAD_CAMERA_1.frame_received.connect(self.display_frame1)
@@ -324,13 +325,19 @@ class MyApplication(QMainWindow):
         self.set_default_variables()
 
     def reconnect_camera_thread(self):
+        if (
+            self.THREAD_CAMERA_1.is_running == False
+            or self.THREAD_CAMERA_2.is_running == False
+        ):
+            self.THREAD_CAMERA_1.stop()
+            self.THREAD_CAMERA_2.stop()
+
         try:
             if (
                 len(self.graph.get_input_devices()) == self.NUM_CAMERA
-                and not self.THREAD_CAMERA_1.is_running
-                and not self.THREAD_CAMERA_2.is_running
+                and self.THREAD_CAMERA_1.is_running == False
+                and self.THREAD_CAMERA_2.is_running == False
             ):
-                print("re open")
                 self.open_camera_thread()
         except Exception as E:
             cmd_printer("ERROR", str(E))
