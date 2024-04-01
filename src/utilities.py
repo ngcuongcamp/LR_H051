@@ -108,6 +108,7 @@ def read_config(self):
     self.MES_BACKEND = config["MES"]["BACKEND"]
     self.PERCENT_MATCHING_1 = float(config["MES"]["PERCENT_MATCHING_1"])
     self.PERCENT_MATCHING_2 = float(config["MES"]["PERCENT_MATCHING_2"])
+    self.PERCENT_MATCHING_3 = float(config["MES"]["PERCENT_MATCHING_3"])
 
 
 handle_remove_old_folders()

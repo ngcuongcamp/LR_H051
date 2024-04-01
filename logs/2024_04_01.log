@@ -106,3 +106,113 @@
 2024-04-01 08:56:50,694 - ERROR - Camera Error
 2024-04-01 08:56:53,955 - ERROR - Camera Error
 2024-04-01 08:56:53,955 - ERROR - CAM ERROR
+2024-04-01 09:24:21,040 - ERROR - Camera Error
+2024-04-01 09:24:21,040 - ERROR - CAM ERROR
+2024-04-01 09:25:38,782 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-01 09:25:38,782 - INFO - --> Received scan signal from PLC
+2024-04-01 09:25:38,782 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-01 09:25:39,096 - INFO - --> RESULT SCAN
+2024-04-01 09:25:39,096 - INFO - PASS SCAN
+2024-04-01 09:25:39,096 - INFO - ----------- SEND TO MES -----------
+2024-04-01 09:25:39,222 - WARNING - Received signal PLC when program is processing.
+2024-04-01 09:25:39,605 - INFO - --> Send Data SN:  11111111111111111
+2024-04-01 09:25:39,607 - WARNING - Received signal PLC when program is processing.
+2024-04-01 09:25:49,838 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-01 09:25:49,838 - INFO - --> Received scan signal from PLC
+2024-04-01 09:25:49,838 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-01 09:25:50,043 - INFO - --> RESULT SCAN
+2024-04-01 09:25:50,043 - INFO - PASS SCAN
+2024-04-01 09:25:50,043 - INFO - ----------- SEND TO MES -----------
+2024-04-01 09:25:50,351 - INFO - --> Send Data SN:  11111111111111111
+2024-04-01 09:28:22,371 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-01 09:28:22,371 - INFO - --> Received scan signal from PLC
+2024-04-01 09:28:22,371 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-01 09:28:22,565 - INFO - --> RESULT SCAN
+2024-04-01 09:28:22,565 - INFO - PASS SCAN
+2024-04-01 09:28:22,565 - INFO - ----------- SEND TO MES -----------
+2024-04-01 09:28:22,686 - WARNING - Received signal PLC when program is processing.
+2024-04-01 09:28:22,874 - INFO - --> Send Data SN:  11111111111111111
+2024-04-01 09:28:22,880 - WARNING - Received signal PLC when program is processing.
+2024-04-01 09:28:44,006 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-01 09:28:44,006 - INFO - --> Received scan signal from PLC
+2024-04-01 09:28:44,006 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-01 09:28:44,201 - INFO - --> RESULT SCAN
+2024-04-01 09:28:44,201 - INFO - PASS SCAN
+2024-04-01 09:28:44,202 - INFO - ----------- SEND TO MES -----------
+2024-04-01 09:28:44,319 - WARNING - Received signal PLC when program is processing.
+2024-04-01 09:28:44,337 - WARNING - Received signal PLC when program is processing.
+2024-04-01 09:28:44,349 - WARNING - Received signal PLC when program is processing.
+2024-04-01 09:28:44,535 - INFO - --> Send Data SN:  11111111111111111
+2024-04-01 09:28:44,541 - WARNING - Received signal PLC when program is processing.
+2024-04-01 09:28:57,423 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-01 09:28:57,423 - INFO - --> Received scan signal from PLC
+2024-04-01 09:28:57,423 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-01 09:28:57,630 - INFO - --> RESULT SCAN
+2024-04-01 09:28:57,630 - INFO - PASS SCAN
+2024-04-01 09:28:57,630 - INFO - ----------- SEND TO MES -----------
+2024-04-01 09:28:57,750 - WARNING - Received signal PLC when program is processing.
+2024-04-01 09:28:58,098 - INFO - --> Send Data SN:  11111111111111111
+2024-04-01 09:28:58,100 - WARNING - Received signal PLC when program is processing.
+2024-04-01 09:29:22,559 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-01 09:29:22,559 - INFO - --> Received scan signal from PLC
+2024-04-01 09:29:22,559 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-01 09:29:22,760 - INFO - --> RESULT SCAN
+2024-04-01 09:29:22,760 - INFO - PASS SCAN
+2024-04-01 09:29:22,761 - INFO - ----------- SEND TO MES -----------
+2024-04-01 09:29:22,874 - WARNING - Received signal PLC when program is processing.
+2024-04-01 09:29:22,889 - WARNING - Received signal PLC when program is processing.
+2024-04-01 09:29:23,210 - INFO - --> Send Data SN:  11111111111111111
+2024-04-01 09:29:23,225 - WARNING - Received signal PLC when program is processing.
+2024-04-01 09:29:23,568 - INFO - PASS TO CHECK SN CODE
+2024-04-01 09:29:23,688 - WARNING - Received signal PLC when program is processing.
+2024-04-01 09:29:23,876 - INFO - --> Send Data FIXTURE:  22222222222222222
+2024-04-01 09:29:23,910 - WARNING - Received signal PLC when program is processing.
+2024-04-01 09:29:23,997 - INFO - PASS TO CHECK FIXTURE CODE
+2024-04-01 09:29:23,997 - INFO - ------PASS MES-------
+2024-04-01 09:29:23,997 - INFO - Data SN: 11111111111111111
+2024-04-01 09:29:23,997 - INFO - Data FIXTURE: 22222222222222222
+2024-04-01 09:29:26,228 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-01 09:29:26,228 - INFO - --> Received scan signal from PLC
+2024-04-01 09:29:26,228 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-01 09:29:26,431 - INFO - --> RESULT SCAN
+2024-04-01 09:29:26,431 - INFO - PASS SCAN
+2024-04-01 09:29:26,431 - INFO - ----------- SEND TO MES -----------
+2024-04-01 09:29:26,556 - WARNING - Received signal PLC when program is processing.
+2024-04-01 09:29:26,745 - INFO - --> Send Data SN:  11111111111111111
+2024-04-01 09:29:26,749 - WARNING - Received signal PLC when program is processing.
+2024-04-01 09:29:27,066 - INFO - PASS TO CHECK SN CODE
+2024-04-01 09:29:27,182 - WARNING - Received signal PLC when program is processing.
+2024-04-01 09:29:27,195 - WARNING - Received signal PLC when program is processing.
+2024-04-01 09:29:27,211 - WARNING - Received signal PLC when program is processing.
+2024-04-01 09:29:27,393 - INFO - --> Send Data FIXTURE:  22222222222222222
+2024-04-01 09:29:27,430 - WARNING - Received signal PLC when program is processing.
+2024-04-01 09:29:27,516 - INFO - PASS TO CHECK FIXTURE CODE
+2024-04-01 09:29:27,516 - INFO - ------PASS MES-------
+2024-04-01 09:29:27,516 - INFO - Data SN: 11111111111111111
+2024-04-01 09:29:27,516 - INFO - Data FIXTURE: 22222222222222222
+2024-04-01 09:29:29,908 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-01 09:29:29,908 - INFO - --> Received scan signal from PLC
+2024-04-01 09:29:29,908 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-01 09:29:30,139 - INFO - --> RESULT SCAN
+2024-04-01 09:29:30,139 - INFO - PASS SCAN
+2024-04-01 09:29:30,140 - INFO - ----------- SEND TO MES -----------
+2024-04-01 09:29:30,254 - WARNING - Received signal PLC when program is processing.
+2024-04-01 09:29:30,269 - WARNING - Received signal PLC when program is processing.
+2024-04-01 09:29:30,457 - INFO - --> Send Data SN:  11111111111111111
+2024-04-01 09:29:30,462 - WARNING - Received signal PLC when program is processing.
+2024-04-01 09:29:30,784 - INFO - PASS TO CHECK SN CODE
+2024-04-01 09:29:30,908 - WARNING - Received signal PLC when program is processing.
+2024-04-01 09:29:31,094 - INFO - --> Send Data FIXTURE:  22222222222222222
+2024-04-01 09:29:31,134 - WARNING - Received signal PLC when program is processing.
+2024-04-01 09:29:31,219 - INFO - PASS TO CHECK FIXTURE CODE
+2024-04-01 09:29:31,219 - INFO - ------PASS MES-------
+2024-04-01 09:29:31,219 - INFO - Data SN: 11111111111111111
+2024-04-01 09:29:31,219 - INFO - Data FIXTURE: 22222222222222222
