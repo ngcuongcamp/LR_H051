@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'd:\SD_CODE\GUI\no_padding.ui'
+# Form implementation generated from reading ui file 'd:\NguyenCuong\C\HO-51_SPLITED\GUI\no_padding.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.10
 #
@@ -54,7 +54,7 @@ class Ui_MainWindow(object):
         font.setWeight(75)
         self.CameraLabel2.setFont(font)
         self.CameraLabel2.setStyleSheet("\n"
-"font: 10pt \"Segoe UI\"; border: none; color: #fff; background: none; font-weight:bold; background-color: rgba(85, 170, 255,0.4)")
+"font: 10pt \"Segoe UI\"; border: none; color: #fff; background: none; font-weight:bold; background-color:rgba(0, 170, 255,0.5)")
         self.CameraLabel2.setAlignment(QtCore.Qt.AlignCenter)
         self.CameraLabel2.setObjectName("CameraLabel2")
         self.CameraFrame2 = QtWidgets.QLabel(self.CameraSpan2)
@@ -79,7 +79,7 @@ class Ui_MainWindow(object):
         font.setWeight(75)
         self.CameraLabel1.setFont(font)
         self.CameraLabel1.setStyleSheet("\n"
-"font: 10pt \"Segoe UI\"; border: none; color: #fff; background: none; font-weight:bold; background-color: rgba(85, 170, 255,0.4)")
+"font: 10pt \"Segoe UI\"; border: none; color: #fff; background: none; font-weight:bold; background-color:rgba(0, 170, 255,0.5)")
         self.CameraLabel1.setAlignment(QtCore.Qt.AlignCenter)
         self.CameraLabel1.setObjectName("CameraLabel1")
         self.CameraFrame1 = QtWidgets.QLabel(self.CameraSpan1)
@@ -126,7 +126,7 @@ class Ui_MainWindow(object):
         font.setWeight(75)
         self.ResultLabel.setFont(font)
         self.ResultLabel.setStyleSheet("\n"
-"font: 10pt \"Segoe UI\"; border: none; color:rgb(0, 85, 127); background: none; font-weight:bold; background-color: rgba(85, 170, 255,0.4)")
+"font: 10pt \"Segoe UI\"; border: none; color: #fff; background: none; font-weight:bold; background-color: rgba(85, 170, 255,0.9)")
         self.ResultLabel.setAlignment(QtCore.Qt.AlignCenter)
         self.ResultLabel.setObjectName("ResultLabel")
         MainWindow.setCentralWidget(self.centralwidget)

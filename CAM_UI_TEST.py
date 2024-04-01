@@ -62,6 +62,17 @@ class MyApplication(QMainWindow):
     def handle_signal_plc(self, data):
         if self.THREAD_CAMERA_1.is_running and self.THREAD_CAMERA_2.is_running:
             # if data == b"1":
+
+            #! to try fix update here
+            try:
+                self.Uic.CameraFrame2.repaint()
+                self.Uic.CameraFrame1.repaint()
+                self.Uic.ResultSpan.repaint()
+                print("repaint")
+            except Exception as E:
+                print(E)
+            # finished.
+
             print("\n\n")
             print("------ SCAN SIGNAL -------")
             logger.info("\nxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx")
@@ -97,8 +108,8 @@ class MyApplication(QMainWindow):
             self.data_scan1 = read_code_wechat(frames)
             self.data_scan2 = read_code_wechat(frames2)
 
-            # self.data_scan1 = "11111111111111111"
-            # self.data_scan2 = "22222222222222222"
+            self.data_scan1 = "11111111111111111"
+            self.data_scan2 = "22222222222222222"
 
             if self.data_scan1 is not None and self.data_scan2 is not None:
                 break
@@ -109,17 +120,19 @@ class MyApplication(QMainWindow):
 
         # IF FAIL SCAN
         if self.data_scan1 is None or self.data_scan2 is None:
-            cmd_printer("ERROR", "FAILED")
+            # cmd_printer("ERROR", "FAILED SCAN")
             logger.error("FAILED")
             self.THREAD_PLC.send_signal_to_plc(b"2")
             self.is_processing = False
             if self.IS_SAVE_NG_IMAGE == 1:
                 if self.data_scan1 is None:
+                    cmd_printer("ERROR", "FAILED SCAN SN")
                     image_filename = "image_NG/{}/CAMERA1/{}.png".format(
                         get_current_date(), format_current_time()
                     )
                     cv2.imwrite(image_filename, self.frame1)
                 if self.data_scan2 is None:
+                    cmd_printer("ERROR", "FAILED SCAN FIXTURE")
                     image_filename = "image_NG/{}/CAMERA2/{}.png".format(
                         get_current_date(), format_current_time()
                     )
@@ -325,6 +338,12 @@ class MyApplication(QMainWindow):
         self.set_default_variables()
 
     def reconnect_camera_thread(self):
+        # test always update with update medthod
+        # self.update()
+        try:
+            self.update()
+        except Exception as E:
+            print(E)
         if (
             self.THREAD_CAMERA_1.is_running == False
             or self.THREAD_CAMERA_2.is_running == False

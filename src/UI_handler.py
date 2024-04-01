@@ -60,6 +60,15 @@ def set_fail_state(self):
     set_state(self, "#b84935", "#fff", "#fff", "#b84935", "FAIL")
 
 
+# def set_fail_scan(self, option):
+#     msg = "NONE"
+#     if option == 0:
+#         msg = "FAIL SN"
+#     if option == 1:
+#         msg = "FAIL FIXTURE"
+#     set_state(self, "#b84935", "#fff", "#fff", "#b84935", msg)
+
+
 def set_default_state(self):
     set_state(self, "#fff", "#999", "#006f00", "#fff", "NONE")
 

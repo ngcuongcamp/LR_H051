@@ -124,7 +124,7 @@
       </property>
       <property name="styleSheet">
        <string notr="true">
-font: 10pt &quot;Segoe UI&quot;; border: none; color: #fff; background: none; font-weight:bold; background-color: rgba(85, 170, 255,0.4)</string>
+font: 10pt &quot;Segoe UI&quot;; border: none; color: #fff; background: none; font-weight:bold; background-color:rgba(0, 170, 255,0.5)</string>
       </property>
       <property name="text">
        <string>CAMERA 2</string>
@@ -187,7 +187,7 @@ font: 10pt &quot;Segoe UI&quot;; border: none; color: #fff; background: none; fo
       </property>
       <property name="styleSheet">
        <string notr="true">
-font: 10pt &quot;Segoe UI&quot;; border: none; color: #fff; background: none; font-weight:bold; background-color: rgba(85, 170, 255,0.4)</string>
+font: 10pt &quot;Segoe UI&quot;; border: none; color: #fff; background: none; font-weight:bold; background-color:rgba(0, 170, 255,0.5)</string>
       </property>
       <property name="text">
        <string>CAMERA 1</string>
@@ -303,7 +303,7 @@ font: 16pt &quot;Segoe UI&quot;; border: 1px solid #ccc; color: #999; background
       </property>
       <property name="styleSheet">
        <string notr="true">
-font: 10pt &quot;Segoe UI&quot;; border: none; color:rgb(0, 85, 127); background: none; font-weight:bold; background-color: rgba(85, 170, 255,0.4)</string>
+font: 10pt &quot;Segoe UI&quot;; border: none; color: #fff; background: none; font-weight:bold; background-color: rgba(85, 170, 255,0.9)</string>
       </property>
       <property name="text">
        <string>RESULT</string>
