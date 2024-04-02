@@ -62,6 +62,21 @@ class MyApplication(QMainWindow):
     def handle_signal_plc(self, data):
         if self.THREAD_CAMERA_1.is_running and self.THREAD_CAMERA_2.is_running:
             # if data == b"1":
+
+            #! to try fix update here
+            try:
+                # self.Uic.CameraFrame2.repaint()
+                # self.Uic.CameraFrame1.repaint()
+                # self.Uic.ResultSpan.repaint()
+
+                self.Uic.CameraFrame2.update()
+                self.Uic.CameraFrame1.update()
+                self.Uic.ResultSpan.update()
+                print("repaint")
+            except Exception as E:
+                print(E)
+            # finished.
+
             print("\n\n")
             print("------ SCAN SIGNAL -------")
             logger.info("\nxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx")
@@ -92,10 +107,12 @@ class MyApplication(QMainWindow):
         i = 0
         while i < self.SCAN_LIMIT:
             i = i + 1
-            frames = process_frame1(self, self.frame1)
-            frames2 = process_frame2(self, self.frame2)
-            self.data_scan1 = read_code_wechat(frames)
-            self.data_scan2 = read_code_wechat(frames2)
+            if self.data_scan1 is None:
+                frames = process_frame1(self, self.frame1)
+                self.data_scan1 = read_code_wechat(frames)
+            if self.data_scan2 is None:
+                frames2 = process_frame2(self, self.frame2)
+                self.data_scan2 = read_code_wechat(frames2)
 
             # self.data_scan1 = "11111111111111111"
             # self.data_scan2 = "22222222222222222"
@@ -109,17 +126,47 @@ class MyApplication(QMainWindow):
 
         # IF FAIL SCAN
         if self.data_scan1 is None or self.data_scan2 is None:
-            cmd_printer("ERROR", "FAILED")
+
+            self.state_ui = None
+
+            if self.data_scan1 is None:
+                if self.state_ui in [True, None]:
+                    set_fail_state(self, "FAIL SN")
+                    try:
+                        self.update()
+                        # self.repaint()
+                    except Exception as E:
+                        print(E)
+                    # self.repaint()
+                    self.state_ui = False
+
+            if self.data_scan2 is None:
+                if self.state_ui in [True, None]:
+                    print("test")
+                    set_fail_state(self, "FAIL FIXTURE")
+                    try:
+                        self.update()
+                        # self.repaint()
+                    except Exception as E:
+                        print(E)
+                    # self.repaint()
+                    self.state_ui = False
+
+            # cmd_printer("ERROR", "FAILED SCAN")
             logger.error("FAILED")
             self.THREAD_PLC.send_signal_to_plc(b"2")
             self.is_processing = False
             if self.IS_SAVE_NG_IMAGE == 1:
                 if self.data_scan1 is None:
+
+                    cmd_printer("ERROR", "FAILED SCAN SN")
                     image_filename = "image_NG/{}/CAMERA1/{}.png".format(
                         get_current_date(), format_current_time()
                     )
                     cv2.imwrite(image_filename, self.frame1)
                 if self.data_scan2 is None:
+
+                    cmd_printer("ERROR", "FAILED SCAN FIXTURE")
                     image_filename = "image_NG/{}/CAMERA2/{}.png".format(
                         get_current_date(), format_current_time()
                     )
@@ -132,18 +179,10 @@ class MyApplication(QMainWindow):
             cmd_printer("ERROR", "------FAIL SCAN-------")
             print(f"Data SN: {self.data_scan1}")
             print(f"Data FIXTURE: {self.data_scan2}")
-            if self.state_ui in [True, None]:
-                set_fail_state(self)
-                try:
-                    self.update()
-                    # self.repaint()
-                except Exception as E:
-                    print(E)
-                # self.repaint()
-                self.state_ui = False
 
         # IF PASS SCAN
         if self.data_scan1 is not None and self.data_scan2 is not None:
+            self.state_ui = None
             is_matching_1 = None
             is_matching_2 = None
             cmd_printer("SUCCESS", "PASS SCAN")
@@ -179,7 +218,7 @@ class MyApplication(QMainWindow):
                 self.is_processing = False
                 cmd_printer("ERROR", "SIGNAL FAIL CHECK SN CODE FROM mes")
                 if self.state_ui in [True, None]:
-                    set_fail_state(self)
+                    set_fail_state(self, "FAIL MES")
                     try:
                         self.update()
                         # self.repaint()
@@ -210,7 +249,7 @@ class MyApplication(QMainWindow):
                     self.is_processing = False
                     cmd_printer("ERROR", "SIGNAL FAIL CHECK FIXTURE CODE FROM mes")
                     if self.state_ui in [True, None]:
-                        set_fail_state(self)
+                        set_fail_state(self, "FAIL MES")
                         try:
                             self.update()
                             # self.repaint()
@@ -325,6 +364,12 @@ class MyApplication(QMainWindow):
         self.set_default_variables()
 
     def reconnect_camera_thread(self):
+        # test always update with update medthod
+        # self.update()
+        try:
+            self.update()
+        except Exception as E:
+            print(E)
         if (
             self.THREAD_CAMERA_1.is_running == False
             or self.THREAD_CAMERA_2.is_running == False
@@ -341,6 +386,8 @@ class MyApplication(QMainWindow):
                 self.open_camera_thread()
         except Exception as E:
             cmd_printer("ERROR", str(E))
+
+    # def paintEvent(self, event):
 
 
 if __name__ == "__main__":

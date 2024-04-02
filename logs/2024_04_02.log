@@ -1,0 +1,269 @@
+2024-04-02 09:20:24,989 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-02 09:20:24,989 - INFO - --> Received scan signal from PLC
+2024-04-02 09:20:24,989 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-02 09:20:25,023 - INFO - --> RESULT SCAN
+2024-04-02 09:20:25,024 - INFO - PASS SCAN
+2024-04-02 09:20:25,024 - INFO - ----------- SEND TO MES -----------
+2024-04-02 09:20:25,143 - WARNING - Received signal PLC when program is processing.
+2024-04-02 09:20:25,159 - WARNING - Received signal PLC when program is processing.
+2024-04-02 09:20:25,454 - INFO - --> Send Data SN:  11111111111111111
+2024-04-02 09:20:25,462 - WARNING - Received signal PLC when program is processing.
+2024-04-02 09:40:59,187 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-02 09:40:59,188 - INFO - --> Received scan signal from PLC
+2024-04-02 09:40:59,188 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-02 09:40:59,347 - INFO - --> RESULT SCAN
+2024-04-02 09:40:59,347 - INFO - PASS SCAN
+2024-04-02 09:40:59,348 - INFO - ----------- SEND TO MES -----------
+2024-04-02 09:40:59,470 - WARNING - Received signal PLC when program is processing.
+2024-04-02 09:40:59,826 - INFO - --> Send Data SN:  11111111111111111
+2024-04-02 09:40:59,835 - WARNING - Received signal PLC when program is processing.
+2024-04-02 09:41:20,971 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-02 09:41:20,971 - INFO - --> Received scan signal from PLC
+2024-04-02 09:41:20,971 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-02 09:41:21,544 - INFO - --> RESULT SCAN
+2024-04-02 09:41:21,544 - ERROR - FAILED
+2024-04-02 09:41:21,545 - ERROR - ------FAIL SCAN-------
+2024-04-02 09:41:21,545 - ERROR - Data SN: J46410200BK25R2R6
+2024-04-02 09:41:21,545 - ERROR - Data FIXTURE: None
+2024-04-02 09:43:27,401 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-02 09:43:27,401 - INFO - --> Received scan signal from PLC
+2024-04-02 09:43:27,401 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-02 09:43:28,014 - INFO - --> RESULT SCAN
+2024-04-02 09:43:28,015 - ERROR - FAILED
+2024-04-02 09:43:28,015 - ERROR - ------FAIL SCAN-------
+2024-04-02 09:43:28,015 - ERROR - Data SN: J46410200BK25R2R6
+2024-04-02 09:43:28,015 - ERROR - Data FIXTURE: None
+2024-04-02 09:43:34,692 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-02 09:43:34,693 - INFO - --> Received scan signal from PLC
+2024-04-02 09:43:34,693 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-02 09:43:35,339 - INFO - --> RESULT SCAN
+2024-04-02 09:43:35,339 - ERROR - FAILED
+2024-04-02 09:43:35,339 - ERROR - ------FAIL SCAN-------
+2024-04-02 09:43:35,340 - ERROR - Data SN: J46410200BK25R2R6
+2024-04-02 09:43:35,340 - ERROR - Data FIXTURE: None
+2024-04-02 09:43:48,115 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-02 09:43:48,115 - INFO - --> Received scan signal from PLC
+2024-04-02 09:43:48,115 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-02 09:43:48,721 - INFO - --> RESULT SCAN
+2024-04-02 09:43:48,721 - ERROR - FAILED
+2024-04-02 09:43:48,721 - ERROR - ------FAIL SCAN-------
+2024-04-02 09:43:48,721 - ERROR - Data SN: J46410200BK25R2R6
+2024-04-02 09:43:48,721 - ERROR - Data FIXTURE: None
+2024-04-02 09:48:41,166 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-02 09:48:41,166 - INFO - --> Received scan signal from PLC
+2024-04-02 09:48:41,166 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-02 09:48:41,837 - INFO - --> RESULT SCAN
+2024-04-02 09:48:41,838 - ERROR - FAILED
+2024-04-02 09:48:41,838 - ERROR - ------FAIL SCAN-------
+2024-04-02 09:48:41,838 - ERROR - Data SN: J46410200BK25R2R6
+2024-04-02 09:48:41,838 - ERROR - Data FIXTURE: None
+2024-04-02 09:49:14,723 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-02 09:49:14,723 - INFO - --> Received scan signal from PLC
+2024-04-02 09:49:14,723 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-02 09:49:14,756 - INFO - --> RESULT SCAN
+2024-04-02 09:49:14,757 - INFO - PASS SCAN
+2024-04-02 09:49:14,757 - INFO - ----------- SEND TO MES -----------
+2024-04-02 09:49:14,881 - WARNING - Received signal PLC when program is processing.
+2024-04-02 09:49:15,208 - INFO - --> Send Data SN:  J46410200BK25R2R6
+2024-04-02 09:49:15,216 - WARNING - Received signal PLC when program is processing.
+2024-04-02 09:49:30,494 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-02 09:49:30,494 - INFO - --> Received scan signal from PLC
+2024-04-02 09:49:30,494 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-02 09:49:30,525 - INFO - --> RESULT SCAN
+2024-04-02 09:49:30,525 - INFO - PASS SCAN
+2024-04-02 09:49:30,525 - INFO - ----------- SEND TO MES -----------
+2024-04-02 09:49:30,650 - WARNING - Received signal PLC when program is processing.
+2024-04-02 09:49:30,842 - INFO - --> Send Data SN:  J46410200BK25R2R6
+2024-04-02 09:49:30,843 - WARNING - Received signal PLC when program is processing.
+2024-04-02 09:49:41,419 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-02 09:49:41,419 - INFO - --> Received scan signal from PLC
+2024-04-02 09:49:41,419 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-02 09:49:41,826 - INFO - --> RESULT SCAN
+2024-04-02 09:49:41,826 - ERROR - FAILED
+2024-04-02 09:49:41,826 - ERROR - ------FAIL SCAN-------
+2024-04-02 09:49:41,826 - ERROR - Data SN: None
+2024-04-02 09:49:41,826 - ERROR - Data FIXTURE: G9WLF2XKG4
+2024-04-02 09:49:49,206 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-02 09:49:49,206 - INFO - --> Received scan signal from PLC
+2024-04-02 09:49:49,206 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-02 09:49:49,596 - INFO - --> RESULT SCAN
+2024-04-02 09:49:49,596 - ERROR - FAILED
+2024-04-02 09:49:49,596 - ERROR - ------FAIL SCAN-------
+2024-04-02 09:49:49,596 - ERROR - Data SN: None
+2024-04-02 09:49:49,596 - ERROR - Data FIXTURE: G9WLF2XKG4
+2024-04-02 09:50:42,448 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-02 09:50:42,448 - INFO - --> Received scan signal from PLC
+2024-04-02 09:50:42,448 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-02 09:50:42,836 - INFO - --> RESULT SCAN
+2024-04-02 09:50:42,837 - ERROR - FAILED
+2024-04-02 09:50:42,837 - ERROR - ------FAIL SCAN-------
+2024-04-02 09:50:42,837 - ERROR - Data SN: None
+2024-04-02 09:50:42,837 - ERROR - Data FIXTURE: G9WLF2XKG4
+2024-04-02 09:52:48,711 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-02 09:52:48,711 - INFO - --> Received scan signal from PLC
+2024-04-02 09:52:48,711 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-02 09:52:49,850 - INFO - --> RESULT SCAN
+2024-04-02 09:52:49,851 - ERROR - FAILED
+2024-04-02 09:52:49,852 - ERROR - ------FAIL SCAN-------
+2024-04-02 09:52:49,852 - ERROR - Data SN: None
+2024-04-02 09:52:49,852 - ERROR - Data FIXTURE: None
+2024-04-02 09:53:06,094 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-02 09:53:06,094 - INFO - --> Received scan signal from PLC
+2024-04-02 09:53:06,094 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-02 09:53:06,476 - INFO - --> RESULT SCAN
+2024-04-02 09:53:06,476 - ERROR - FAILED
+2024-04-02 09:53:06,476 - ERROR - ------FAIL SCAN-------
+2024-04-02 09:53:06,476 - ERROR - Data SN: None
+2024-04-02 09:53:06,476 - ERROR - Data FIXTURE: G9WLF2XKG4
+2024-04-02 09:53:09,170 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-02 09:53:09,170 - INFO - --> Received scan signal from PLC
+2024-04-02 09:53:09,170 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-02 09:53:09,558 - INFO - --> RESULT SCAN
+2024-04-02 09:53:09,558 - ERROR - FAILED
+2024-04-02 09:53:09,558 - ERROR - ------FAIL SCAN-------
+2024-04-02 09:53:09,558 - ERROR - Data SN: None
+2024-04-02 09:53:09,558 - ERROR - Data FIXTURE: G9WLF2XKG4
+2024-04-02 09:53:13,902 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-02 09:53:13,902 - INFO - --> Received scan signal from PLC
+2024-04-02 09:53:13,902 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-02 09:53:15,110 - INFO - --> RESULT SCAN
+2024-04-02 09:53:15,110 - ERROR - FAILED
+2024-04-02 09:53:15,110 - ERROR - ------FAIL SCAN-------
+2024-04-02 09:53:15,110 - ERROR - Data SN: J46410200BK25R2R6
+2024-04-02 09:53:15,110 - ERROR - Data FIXTURE: None
+2024-04-02 09:54:21,490 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-02 09:54:21,490 - INFO - --> Received scan signal from PLC
+2024-04-02 09:54:21,490 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-02 09:54:22,149 - INFO - --> RESULT SCAN
+2024-04-02 09:54:22,149 - ERROR - FAILED
+2024-04-02 09:54:22,150 - ERROR - ------FAIL SCAN-------
+2024-04-02 09:54:22,150 - ERROR - Data SN: J46410200BK25R2R6
+2024-04-02 09:54:22,150 - ERROR - Data FIXTURE: None
+2024-04-02 09:54:24,305 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-02 09:54:24,305 - INFO - --> Received scan signal from PLC
+2024-04-02 09:54:24,305 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-02 09:54:24,905 - INFO - --> RESULT SCAN
+2024-04-02 09:54:24,905 - ERROR - FAILED
+2024-04-02 09:54:24,905 - ERROR - ------FAIL SCAN-------
+2024-04-02 09:54:24,905 - ERROR - Data SN: J46410200BK25R2R6
+2024-04-02 09:54:24,905 - ERROR - Data FIXTURE: None
+2024-04-02 09:56:27,020 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-02 09:56:27,020 - INFO - --> Received scan signal from PLC
+2024-04-02 09:56:27,020 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-02 09:56:27,758 - INFO - --> RESULT SCAN
+2024-04-02 09:56:27,759 - ERROR - FAILED
+2024-04-02 09:56:27,759 - ERROR - ------FAIL SCAN-------
+2024-04-02 09:56:27,759 - ERROR - Data SN: J46410200BK25R2R6
+2024-04-02 09:56:27,759 - ERROR - Data FIXTURE: None
+2024-04-02 09:58:01,436 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-02 09:58:01,436 - INFO - --> Received scan signal from PLC
+2024-04-02 09:58:01,436 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-02 09:58:02,227 - INFO - --> RESULT SCAN
+2024-04-02 09:58:02,228 - ERROR - FAILED
+2024-04-02 09:58:02,228 - ERROR - ------FAIL SCAN-------
+2024-04-02 09:58:02,228 - ERROR - Data SN: J46410200BK25R2R6
+2024-04-02 09:58:02,228 - ERROR - Data FIXTURE: None
+2024-04-02 09:58:13,689 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-02 09:58:13,689 - INFO - --> Received scan signal from PLC
+2024-04-02 09:58:13,689 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-02 09:58:14,087 - INFO - --> RESULT SCAN
+2024-04-02 09:58:14,088 - ERROR - FAILED
+2024-04-02 09:58:14,088 - ERROR - ------FAIL SCAN-------
+2024-04-02 09:58:14,088 - ERROR - Data SN: None
+2024-04-02 09:58:14,088 - ERROR - Data FIXTURE: G9WLF2XKG4
+2024-04-02 09:58:17,814 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-02 09:58:17,814 - INFO - --> Received scan signal from PLC
+2024-04-02 09:58:17,814 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-02 09:58:18,623 - INFO - --> RESULT SCAN
+2024-04-02 09:58:18,624 - ERROR - FAILED
+2024-04-02 09:58:18,624 - ERROR - ------FAIL SCAN-------
+2024-04-02 09:58:18,624 - ERROR - Data SN: None
+2024-04-02 09:58:18,624 - ERROR - Data FIXTURE: None
+2024-04-02 09:58:23,938 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-02 09:58:23,938 - INFO - --> Received scan signal from PLC
+2024-04-02 09:58:23,938 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-02 09:58:24,341 - INFO - --> RESULT SCAN
+2024-04-02 09:58:24,343 - ERROR - FAILED
+2024-04-02 09:58:24,343 - ERROR - ------FAIL SCAN-------
+2024-04-02 09:58:24,343 - ERROR - Data SN: J46410200BK25R2R6
+2024-04-02 09:58:24,343 - ERROR - Data FIXTURE: None
+2024-04-02 09:58:32,085 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-02 09:58:32,085 - INFO - --> Received scan signal from PLC
+2024-04-02 09:58:32,085 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-02 09:58:32,122 - INFO - --> RESULT SCAN
+2024-04-02 09:58:32,123 - INFO - PASS SCAN
+2024-04-02 09:58:32,123 - INFO - ----------- SEND TO MES -----------
+2024-04-02 09:58:32,238 - WARNING - Received signal PLC when program is processing.
+2024-04-02 09:58:32,255 - WARNING - Received signal PLC when program is processing.
+2024-04-02 09:58:32,557 - INFO - --> Send Data SN:  J46410200BK25R2R6
+2024-04-02 09:58:32,561 - WARNING - Received signal PLC when program is processing.
+2024-04-02 09:59:18,454 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-02 09:59:18,454 - INFO - --> Received scan signal from PLC
+2024-04-02 09:59:18,454 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-02 09:59:18,902 - INFO - --> RESULT SCAN
+2024-04-02 09:59:18,903 - ERROR - FAILED
+2024-04-02 09:59:18,903 - ERROR - ------FAIL SCAN-------
+2024-04-02 09:59:18,903 - ERROR - Data SN: J46410200BK25R2R6
+2024-04-02 09:59:18,904 - ERROR - Data FIXTURE: None
+2024-04-02 09:59:23,554 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-02 09:59:23,554 - INFO - --> Received scan signal from PLC
+2024-04-02 09:59:23,554 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-02 09:59:24,663 - INFO - --> RESULT SCAN
+2024-04-02 09:59:24,664 - ERROR - FAILED
+2024-04-02 09:59:24,664 - ERROR - ------FAIL SCAN-------
+2024-04-02 09:59:24,664 - ERROR - Data SN: None
+2024-04-02 09:59:24,664 - ERROR - Data FIXTURE: None
+2024-04-02 09:59:39,045 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-02 09:59:39,045 - INFO - --> Received scan signal from PLC
+2024-04-02 09:59:39,045 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-02 09:59:39,475 - INFO - --> RESULT SCAN
+2024-04-02 09:59:39,476 - ERROR - FAILED
+2024-04-02 09:59:39,476 - ERROR - ------FAIL SCAN-------
+2024-04-02 09:59:39,476 - ERROR - Data SN: None
+2024-04-02 09:59:39,476 - ERROR - Data FIXTURE: G9WLF2XKG4
+2024-04-02 09:59:42,416 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-02 09:59:42,416 - INFO - --> Received scan signal from PLC
+2024-04-02 09:59:42,416 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-02 09:59:42,885 - INFO - --> RESULT SCAN
+2024-04-02 09:59:42,885 - ERROR - FAILED
+2024-04-02 09:59:42,886 - ERROR - ------FAIL SCAN-------
+2024-04-02 09:59:42,886 - ERROR - Data SN: None
+2024-04-02 09:59:42,886 - ERROR - Data FIXTURE: G9WLF2XKG4
+2024-04-02 09:59:47,497 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-02 09:59:47,497 - INFO - --> Received scan signal from PLC
+2024-04-02 09:59:47,497 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-02 09:59:47,528 - INFO - --> RESULT SCAN
+2024-04-02 09:59:47,528 - INFO - PASS SCAN
+2024-04-02 09:59:47,528 - INFO - ----------- SEND TO MES -----------
+2024-04-02 09:59:47,652 - WARNING - Received signal PLC when program is processing.
+2024-04-02 09:59:47,983 - INFO - --> Send Data SN:  J46410200BK25R2R6
+2024-04-02 09:59:47,989 - WARNING - Received signal PLC when program is processing.

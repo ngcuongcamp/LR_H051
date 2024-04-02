@@ -56,17 +56,16 @@ def set_state_pass(self):
     set_state(self, "#32a852", "#fff", "#fff", "#006f00", "PASS")
 
 
-def set_fail_state(self):
-    set_state(self, "#b84935", "#fff", "#fff", "#b84935", "FAIL")
+def set_fail_state(self, title):
+    set_state(self, "#b84935", "#fff", "#fff", "#b84935", title)
 
 
-# def set_fail_scan(self, option):
-#     msg = "NONE"
-#     if option == 0:
-#         msg = "FAIL SN"
-#     if option == 1:
-#         msg = "FAIL FIXTURE"
-#     set_state(self, "#b84935", "#fff", "#fff", "#b84935", msg)
+# def set_fail_sn(self):
+#     set_state(self, "#b84935", "#fff", "#fff", "#b84935", "FAIL SN")
+
+
+# def set_fail_fixture(self):
+#     set_state(self, "#b84935", "#fff", "#fff", "#b84935", "FAIL FIXTURE")
 
 
 def set_default_state(self):
