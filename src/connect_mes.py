@@ -22,7 +22,7 @@ def send_data_to_mes(self, data: str):
     # L352, T104, R780, B136
     cmd_printer("INFO", "Start send")
     if self.IS_USE_AUTOCLICK == 1:
-        pyautogui.click(x=400, y=115)
+        pyautogui.click(x=400, y=120)
         pyautogui.typewrite(data)
 
     elif self.IS_USE_AUTOCLICK == 0:
