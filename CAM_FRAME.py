@@ -71,7 +71,7 @@ class MyApplication(QMainWindow):
                 self.Uic.CameraFrame2.update()
                 self.Uic.CameraFrame1.update()
                 self.Uic.ResultSpan.update()
-                # print("repaint")
+                print("repaint")
             except Exception as E:
                 print(E)
             # finished.
@@ -243,6 +243,7 @@ class MyApplication(QMainWindow):
                 if is_matching_2 == False:
                     self.result_mes_operation[0] = False
                     self.THREAD_PLC.send_signal_to_plc(b"2")
+                    self.is_processing = False
                     self.is_processing = False
                     cmd_printer("ERROR", "SIGNAL FAIL CHECK FIXTURE CODE FROM mes")
                     if self.state_ui in [True, None]:

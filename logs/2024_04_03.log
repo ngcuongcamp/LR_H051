@@ -1,0 +1,279 @@
+2024-04-03 08:27:06,380 - ERROR - Camera Error
+2024-04-03 08:27:06,380 - ERROR - Camera Error
+2024-04-03 08:27:06,380 - ERROR - CAM ERROR
+2024-04-03 08:27:39,086 - ERROR - Camera Error
+2024-04-03 08:27:44,165 - ERROR - Camera Error
+2024-04-03 08:27:57,520 - ERROR - Camera Error
+2024-04-03 08:28:42,612 - ERROR - CAM ERROR
+2024-04-03 08:28:42,612 - ERROR - Camera Error
+2024-04-03 08:28:42,621 - ERROR - Camera Error
+2024-04-03 08:28:42,621 - ERROR - CAM ERROR
+2024-04-03 08:38:40,811 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-03 08:38:40,811 - INFO - --> Received scan signal from PLC
+2024-04-03 08:38:40,811 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-03 08:38:41,525 - INFO - --> RESULT SCAN
+2024-04-03 08:38:41,526 - INFO - PASS SCAN
+2024-04-03 08:38:41,526 - INFO - ----------- SEND TO MES -----------
+2024-04-03 08:38:41,657 - WARNING - Received signal PLC when program is processing.
+2024-04-03 08:38:41,672 - WARNING - Received signal PLC when program is processing.
+2024-04-03 08:38:42,001 - INFO - --> Send Data SN:  LGK4MLXLRR
+2024-04-03 08:38:42,008 - WARNING - Received signal PLC when program is processing.
+2024-04-03 08:45:33,248 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-03 08:45:33,248 - INFO - --> Received scan signal from PLC
+2024-04-03 08:45:33,248 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-03 08:47:06,186 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-03 08:47:06,186 - INFO - --> Received scan signal from PLC
+2024-04-03 08:47:06,186 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-03 08:47:14,735 - WARNING - Received signal PLC when program is processing.
+2024-04-03 08:48:50,648 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-03 08:48:50,648 - INFO - --> Received scan signal from PLC
+2024-04-03 08:48:50,648 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-03 08:48:52,100 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-03 08:48:52,100 - INFO - --> Received scan signal from PLC
+2024-04-03 08:48:52,100 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-03 08:48:52,351 - INFO - --> RESULT SCAN
+2024-04-03 08:48:52,352 - INFO - PASS SCAN
+2024-04-03 08:48:52,352 - INFO - ----------- SEND TO MES -----------
+2024-04-03 08:48:52,479 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-03 08:48:52,479 - INFO - --> Received scan signal from PLC
+2024-04-03 08:48:52,479 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-03 08:48:52,495 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-03 08:48:52,495 - INFO - --> Received scan signal from PLC
+2024-04-03 08:48:52,495 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-03 08:49:22,732 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-03 08:49:22,732 - INFO - --> Received scan signal from PLC
+2024-04-03 08:49:22,732 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-03 08:49:29,346 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-03 08:49:29,346 - INFO - --> Received scan signal from PLC
+2024-04-03 08:49:29,346 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-03 08:49:29,554 - INFO - --> RESULT SCAN
+2024-04-03 08:49:29,554 - INFO - PASS SCAN
+2024-04-03 08:49:29,554 - INFO - ----------- SEND TO MES -----------
+2024-04-03 08:49:29,677 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-03 08:49:29,677 - INFO - --> Received scan signal from PLC
+2024-04-03 08:49:29,677 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-03 08:49:29,925 - INFO - --> RESULT SCAN
+2024-04-03 08:49:29,925 - INFO - PASS SCAN
+2024-04-03 08:49:29,926 - INFO - ----------- SEND TO MES -----------
+2024-04-03 08:49:30,010 - INFO - --> Send Data SN:  WP49TV67NN
+2024-04-03 08:49:30,016 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-03 08:49:30,016 - INFO - --> Received scan signal from PLC
+2024-04-03 08:49:30,016 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-03 08:49:30,042 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-03 08:49:30,042 - INFO - --> Received scan signal from PLC
+2024-04-03 08:49:30,042 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-03 08:49:30,058 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-03 08:49:30,058 - INFO - --> Received scan signal from PLC
+2024-04-03 08:49:30,058 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-03 08:49:30,268 - INFO - --> Send Data SN:  None
+2024-04-03 08:49:30,286 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-03 08:49:30,286 - INFO - --> Received scan signal from PLC
+2024-04-03 08:49:30,286 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-03 08:49:30,535 - INFO - --> RESULT SCAN
+2024-04-03 08:49:30,536 - INFO - PASS SCAN
+2024-04-03 08:49:30,536 - INFO - ----------- SEND TO MES -----------
+2024-04-03 08:49:30,757 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-03 08:49:30,757 - INFO - --> Received scan signal from PLC
+2024-04-03 08:49:30,757 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-03 08:49:30,769 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-03 08:49:30,769 - INFO - --> Received scan signal from PLC
+2024-04-03 08:49:30,769 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-03 08:49:30,769 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-03 08:49:30,769 - INFO - --> Received scan signal from PLC
+2024-04-03 08:49:30,769 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-03 08:49:30,790 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-03 08:49:30,790 - INFO - --> Received scan signal from PLC
+2024-04-03 08:49:30,790 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-03 08:49:39,193 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-03 08:49:39,193 - INFO - --> Received scan signal from PLC
+2024-04-03 08:49:39,193 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-03 08:49:42,889 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-03 08:49:42,889 - INFO - --> Received scan signal from PLC
+2024-04-03 08:49:42,889 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-03 08:49:43,007 - INFO - --> RESULT SCAN
+2024-04-03 08:49:43,007 - INFO - PASS SCAN
+2024-04-03 08:49:43,007 - INFO - ----------- SEND TO MES -----------
+2024-04-03 08:49:43,126 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-03 08:49:43,126 - INFO - --> Received scan signal from PLC
+2024-04-03 08:49:43,126 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-03 08:49:43,138 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-03 08:49:43,138 - INFO - --> Received scan signal from PLC
+2024-04-03 08:49:43,138 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-03 08:49:43,154 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-03 08:49:43,154 - INFO - --> Received scan signal from PLC
+2024-04-03 08:49:43,154 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-03 08:49:43,486 - INFO - --> Send Data SN:  None
+2024-04-03 08:49:43,491 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-03 08:49:43,491 - INFO - --> Received scan signal from PLC
+2024-04-03 08:49:43,491 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-03 08:49:43,635 - INFO - --> RESULT SCAN
+2024-04-03 08:49:43,635 - INFO - PASS SCAN
+2024-04-03 08:49:43,635 - INFO - ----------- SEND TO MES -----------
+2024-04-03 08:49:43,773 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-03 08:49:43,773 - INFO - --> Received scan signal from PLC
+2024-04-03 08:49:43,773 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-03 08:49:43,782 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-03 08:49:43,782 - INFO - --> Received scan signal from PLC
+2024-04-03 08:49:43,782 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-03 08:49:43,801 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-03 08:49:43,801 - INFO - --> Received scan signal from PLC
+2024-04-03 08:49:43,801 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-03 08:49:44,008 - INFO - --> Send Data SN:  None
+2024-04-03 08:49:44,039 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-03 08:49:44,039 - INFO - --> Received scan signal from PLC
+2024-04-03 08:49:44,039 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-03 08:49:44,243 - INFO - --> RESULT SCAN
+2024-04-03 08:49:44,245 - INFO - PASS SCAN
+2024-04-03 08:49:44,263 - INFO - ----------- SEND TO MES -----------
+2024-04-03 08:49:44,514 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-03 08:49:44,515 - INFO - --> Received scan signal from PLC
+2024-04-03 08:49:44,515 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-03 08:49:44,532 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-03 08:49:44,532 - INFO - --> Received scan signal from PLC
+2024-04-03 08:49:44,532 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-03 08:49:44,533 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-03 08:49:44,533 - INFO - --> Received scan signal from PLC
+2024-04-03 08:49:44,533 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-03 08:49:44,552 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-03 08:49:44,552 - INFO - --> Received scan signal from PLC
+2024-04-03 08:49:44,552 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-03 08:49:44,552 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-03 08:49:44,552 - INFO - --> Received scan signal from PLC
+2024-04-03 08:49:44,553 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-03 08:49:50,769 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-03 08:49:50,769 - INFO - --> Received scan signal from PLC
+2024-04-03 08:49:50,769 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-03 08:49:50,995 - INFO - --> RESULT SCAN
+2024-04-03 08:49:50,995 - INFO - PASS SCAN
+2024-04-03 08:49:50,995 - INFO - ----------- SEND TO MES -----------
+2024-04-03 08:49:51,118 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-03 08:49:51,118 - INFO - --> Received scan signal from PLC
+2024-04-03 08:49:51,118 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-03 08:49:51,505 - INFO - --> Send Data SN:  None
+2024-04-03 08:49:51,518 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-03 08:49:51,518 - INFO - --> Received scan signal from PLC
+2024-04-03 08:49:51,518 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-03 08:50:07,568 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-03 08:50:07,568 - INFO - --> Received scan signal from PLC
+2024-04-03 08:50:07,568 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-03 08:57:20,142 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-03 08:57:20,142 - INFO - --> Received scan signal from PLC
+2024-04-03 08:57:20,142 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-03 08:57:49,843 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-03 08:57:49,843 - INFO - --> Received scan signal from PLC
+2024-04-03 08:57:49,843 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-03 08:57:50,968 - INFO - --> RESULT SCAN
+2024-04-03 08:57:50,968 - INFO - PASS SCAN
+2024-04-03 08:57:50,968 - INFO - ----------- SEND TO MES -----------
+2024-04-03 08:57:51,087 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-03 08:57:51,088 - INFO - --> Received scan signal from PLC
+2024-04-03 08:57:51,088 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-03 08:57:51,102 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-03 08:57:51,102 - INFO - --> Received scan signal from PLC
+2024-04-03 08:57:51,102 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-03 08:57:51,400 - INFO - --> Send Data SN:  FYHQ03FG4F
+2024-04-03 08:57:51,408 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-03 08:57:51,408 - INFO - --> Received scan signal from PLC
+2024-04-03 08:57:51,408 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-03 08:57:51,585 - INFO - --> RESULT SCAN
+2024-04-03 08:57:51,585 - INFO - PASS SCAN
+2024-04-03 08:57:51,585 - INFO - ----------- SEND TO MES -----------
+2024-04-03 08:57:51,703 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-03 08:57:51,703 - INFO - --> Received scan signal from PLC
+2024-04-03 08:57:51,703 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-03 08:57:51,749 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-03 08:57:51,750 - INFO - --> Received scan signal from PLC
+2024-04-03 08:57:51,750 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-03 08:57:51,897 - INFO - --> Send Data SN:  None
+2024-04-03 08:57:51,898 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-03 08:57:51,898 - INFO - --> Received scan signal from PLC
+2024-04-03 08:57:51,898 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-03 08:57:52,596 - INFO - --> RESULT SCAN
+2024-04-03 08:57:52,597 - INFO - PASS SCAN
+2024-04-03 08:57:52,597 - INFO - ----------- SEND TO MES -----------
+2024-04-03 08:57:52,730 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-03 08:57:52,730 - INFO - --> Received scan signal from PLC
+2024-04-03 08:57:52,730 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-03 08:57:52,746 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-03 08:57:52,746 - INFO - --> Received scan signal from PLC
+2024-04-03 08:57:52,746 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-03 08:57:52,931 - INFO - --> Send Data SN:  FYHQ03FG4F
+2024-04-03 08:57:52,939 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-03 08:57:52,939 - INFO - --> Received scan signal from PLC
+2024-04-03 08:57:52,939 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-03 08:57:54,730 - INFO - --> RESULT SCAN
+2024-04-03 08:57:54,730 - INFO - PASS SCAN
+2024-04-03 08:57:54,730 - INFO - ----------- SEND TO MES -----------
+2024-04-03 08:57:54,858 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-03 08:57:54,858 - INFO - --> Received scan signal from PLC
+2024-04-03 08:57:54,859 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-03 08:57:55,040 - INFO - --> Send Data SN:  None
+2024-04-03 08:57:55,053 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-03 08:57:55,053 - INFO - --> Received scan signal from PLC
+2024-04-03 08:57:55,053 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-03 08:57:55,294 - INFO - --> RESULT SCAN
+2024-04-03 08:57:55,295 - INFO - PASS SCAN
+2024-04-03 08:57:55,295 - INFO - ----------- SEND TO MES -----------
+2024-04-03 08:57:55,414 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-03 08:57:55,414 - INFO - --> Received scan signal from PLC
+2024-04-03 08:57:55,414 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-03 08:57:55,429 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-03 08:57:55,429 - INFO - --> Received scan signal from PLC
+2024-04-03 08:57:55,429 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-03 08:57:55,604 - INFO - --> Send Data SN:  None
+2024-04-03 08:57:55,611 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-03 08:57:55,611 - INFO - --> Received scan signal from PLC
+2024-04-03 08:57:55,611 - INFO - --> ------ SCAN SIGNAL -------

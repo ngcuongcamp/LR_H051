@@ -42,22 +42,6 @@ class PLCThread(QThread):
                     data = self.serial_port.readline()
 
                     if len(data) > 0:
-                        # if data not in [b"1", b"2"]:
-                        #     cmd_printer("WARNING", "Wrong Signal!")
-                        #     logger.warning("Wrong PLC Signal")
-                        # else:
-                        #     if self.main_ref.is_processing == False:
-                        #         self.main_ref.is_processing = True
-                        #         self.data_received.emit(data)
-                        #     elif self.main_ref.is_processing:
-                        #         cmd_printer(
-                        #             "WARNING",
-                        #             "Received signal PLC when program is processing.",
-                        #         )
-                        #         logger.warning(
-                        #             "Received signal PLC when program is processing."
-                        #         )
-
                         if self.main_ref.is_processing == False:
                             self.main_ref.is_processing = True
                             self.data_received.emit(data)
@@ -69,6 +53,9 @@ class PLCThread(QThread):
                             logger.warning(
                                 "Received signal PLC when program is processing."
                             )
+
+                        # self.data_received.emit(data)
+
         except Exception as e:
             self.signal_error.emit()
             logger.error(f"Connect PLC Error: {e}")

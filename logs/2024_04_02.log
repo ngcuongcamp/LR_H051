@@ -267,3 +267,40 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 2024-04-02 09:59:47,652 - WARNING - Received signal PLC when program is processing.
 2024-04-02 09:59:47,983 - INFO - --> Send Data SN:  J46410200BK25R2R6
 2024-04-02 09:59:47,989 - WARNING - Received signal PLC when program is processing.
+2024-04-02 10:04:59,539 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-02 10:04:59,539 - INFO - --> Received scan signal from PLC
+2024-04-02 10:04:59,539 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-02 10:05:00,206 - INFO - --> RESULT SCAN
+2024-04-02 10:05:00,207 - ERROR - FAILED
+2024-04-02 10:05:00,207 - ERROR - ------FAIL SCAN-------
+2024-04-02 10:05:00,207 - ERROR - Data SN: J46410200BK25R2R6
+2024-04-02 10:05:00,207 - ERROR - Data FIXTURE: None
+2024-04-02 10:05:03,275 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-02 10:05:03,276 - INFO - --> Received scan signal from PLC
+2024-04-02 10:05:03,276 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-02 10:05:03,945 - INFO - --> RESULT SCAN
+2024-04-02 10:05:03,946 - ERROR - FAILED
+2024-04-02 10:05:03,946 - ERROR - ------FAIL SCAN-------
+2024-04-02 10:05:03,946 - ERROR - Data SN: J46410200BK25R2R6
+2024-04-02 10:05:03,946 - ERROR - Data FIXTURE: None
+2024-04-02 10:05:09,498 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-02 10:05:09,498 - INFO - --> Received scan signal from PLC
+2024-04-02 10:05:09,498 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-02 10:05:09,535 - INFO - --> RESULT SCAN
+2024-04-02 10:05:09,535 - INFO - PASS SCAN
+2024-04-02 10:05:09,535 - INFO - ----------- SEND TO MES -----------
+2024-04-02 10:05:09,654 - WARNING - Received signal PLC when program is processing.
+2024-04-02 10:05:09,677 - WARNING - Received signal PLC when program is processing.
+2024-04-02 10:05:09,994 - INFO - --> Send Data SN:  J46410200BK25R2R6
+2024-04-02 10:05:10,012 - WARNING - Received signal PLC when program is processing.
+2024-04-02 11:22:45,041 - ERROR - Camera Error
+2024-04-02 11:22:45,041 - ERROR - Camera Error
+2024-04-02 11:22:45,286 - ERROR - CAM ERROR
+2024-04-02 11:22:45,286 - ERROR - CAM ERROR
+2024-04-02 11:22:49,144 - ERROR - Camera Error
+2024-04-02 11:22:49,145 - ERROR - Camera Error
+2024-04-02 11:22:49,145 - ERROR - CAM ERROR
+2024-04-02 11:22:49,145 - ERROR - CAM ERROR
