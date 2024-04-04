@@ -19,11 +19,18 @@ def get_name_mes_app(self):
 
 
 def send_data_to_mes(self, data: str):
+    # L352, T104, R780, B136
     cmd_printer("INFO", "Start send")
-    x = 1024 / 2
-    y = 768 / 2
-    pyautogui.moveTo(x, y)
-    pyautogui.typewrite(data)
-    pyautogui.moveTo(x, y)
+    if self.IS_USE_AUTOCLICK == 1:
+        pyautogui.click(x=400, y=115)
+        pyautogui.typewrite(data)
+
+    elif self.IS_USE_AUTOCLICK == 0:
+        x = 1024 / 2
+        y = 768 / 2
+        pyautogui.moveTo(x, y)
+        pyautogui.typewrite(data)
+        pyautogui.moveTo(x, y)
+
     keyboard.press_and_release("enter")
     cmd_printer("INFO", "End send")
