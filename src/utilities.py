@@ -92,10 +92,14 @@ def read_config(self):
     self.NUM_CAMERA = int(config["SETTING"]["NUM_CAMERA"])
     self.IS_SAVE_NG_IMAGE = int(config["SETTING"]["IS_SAVE_NG_IMAGE"])
     self.IS_OPEN_CAM_PROPS = int(config["SETTING"]["IS_OPEN_CAM_PROPS"])
+    self.SHOW = int(config["SETTING"]["SHOW"])
+    
     # IS_USE_AUTOCLICK
+    # IS_USE_REPAINT
     self.IS_USE_AUTOCLICK = int(config["SETTING"]["IS_USE_AUTOCLICK"])
     self.PROP_EXPOSURE_1 = int(config["SETTING"]["PROP_EXPOSURE_1"])
     self.PROP_EXPOSURE_2 = int(config["SETTING"]["PROP_EXPOSURE_2"])
+    self.IS_USE_REPAINT = int(config["SETTING"]["IS_USE_REPAINT"])
 
     # Process image config
     self.BLOCK_SIZE_1 = int(config["THRESH"]["BLOCK_SIZE_1"])

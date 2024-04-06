@@ -29,8 +29,8 @@ def send_data_to_mes(self, data: str):
         pyautogui.typewrite(data)
 
     elif self.IS_USE_AUTOCLICK == 0:
-        # x = 1024 / 2
-        # y = 768 / 2
+        x = 1024 / 2
+        y = 768 / 2
         pyautogui.moveTo(x, y)
         pyautogui.typewrite(data)
         pyautogui.moveTo(x, y)

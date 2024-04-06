@@ -6,6 +6,7 @@ from src.connect_mes import *
 from src.reader import *
 from src.UI_handler import *
 from src.capture_and_compare import *
+from src.Worker_locate import *
 
 
 class MyApplication(QMainWindow):
@@ -22,9 +23,21 @@ class MyApplication(QMainWindow):
         self.is_update_cam_error = True
         self.is_processing = False
         self.state_ui = None
+        self.is_pushing = False
 
         initial_UI_MainWindow(self)  # initialize UI
         read_config(self)  # read config
+
+        #
+        self.timer_to_repaint = QTimer(self)
+        self.timer_to_repaint.timeout.connect(self.repaint_ui)
+        self.timer_to_repaint.start(5000)
+
+        self.timer_to_minimize = QTimer(self)
+        self.timer_to_minimize.timeout.connect(self.minimize_ui)
+        # 5 mins to refresh
+        self.timer_to_minimize.start(5 * 60 * 1000)
+        # self.timer_to_minimize.start(5000)
 
         # thread CAMERA
         self.open_camera_thread()
@@ -41,40 +54,36 @@ class MyApplication(QMainWindow):
         self.THREAD_PLC.start()
         self.THREAD_PLC.data_received.connect(self.handle_signal_plc)
 
-    def handle_click_update(self, event):
-        req = QMessageBox.question(
-            self,
-            "Confirm Update",
-            "Do you want to update latest version?",
-            QMessageBox.Yes | QMessageBox.No,
-            QMessageBox.No,
-        )
-        if req == QMessageBox.Yes:
-            cmd_printer("WARNING", "Handler update function here...")
+    # def handle_click_update(self, event):
+    #     req = QMessageBox.question(
+    #         self,
+    #         "Confirm Update",
+    #         "Do you want to update latest version?",
+    #         QMessageBox.Yes | QMessageBox.No,
+    #         QMessageBox.No,
+    #     )
+    #     if req == QMessageBox.Yes:
+    #         cmd_printer("WARNING", "Handler update function here...")
 
-            req3 = QMessageBox.warning(
-                self, "Information", "Not found latest version!", QMessageBox.Cancel
-            )
-        else:
-            print("Ignore update")
+    #         req3 = QMessageBox.warning(
+    #             self, "Information", "Not found latest version!", QMessageBox.Cancel
+    #         )
+    #     else:
+    #         print("Ignore update")
 
     # handle plc signal
     def handle_signal_plc(self, data):
         if self.THREAD_CAMERA_1.is_running and self.THREAD_CAMERA_2.is_running:
             # if data == b"1":
-
             #! to try fix update here
-            try:
-                # self.Uic.CameraFrame2.repaint()
-                # self.Uic.CameraFrame1.repaint()
-                # self.Uic.ResultSpan.repaint()
-                self.Uic.CameraFrame2.update()
-                self.Uic.CameraFrame1.update()
-                self.Uic.ResultSpan.update()
-                # print("repaint")
-            except Exception as E:
-                print(E)
-            # finished.
+            # if self.IS_USE_REPAINT == 1:
+            #     print("use repaint")
+            #     try:
+            #         self.Uic.CameraFrame2.repaint()
+            #         self.Uic.CameraFrame1.repaint()
+            #         self.Uic.ResultSpan.repaint()
+            #     except Exception as E:
+            #         print(E)
 
             print("\n\n")
             print("------ SCAN SIGNAL -------")
@@ -100,18 +109,28 @@ class MyApplication(QMainWindow):
             cmd_printer("ERROR", f"Signal PLC: {data}")
 
     def scan_product_code(self):
-        stime = time.time()
-        # set_default_state(self)
+        start_time_read = time.time()
         self.set_default_variables()
+
+        if self.SHOW != 1:
+            self.state_ui = None
+            set_default_state(self)
+            self.Show_frame1(None)
+            self.Show_frame2(None)
         i = 0
         while i < self.SCAN_LIMIT:
             i = i + 1
             if self.data_scan1 is None:
                 frames = process_frame1(self, self.frame1)
-                self.data_scan1 = read_code_wechat(frames)
+                self.data_scan1, point1 = read_code_pyzbar(frames)
+                if self.data_scan1 and self.SHOW != 1:
+                    self.Show_frame1(point1)
+
             if self.data_scan2 is None:
                 frames2 = process_frame2(self, self.frame2)
-                self.data_scan2 = read_code_wechat(frames2)
+                self.data_scan2, point2 = read_code_pyzbar(frames2)
+                if self.data_scan2 and self.SHOW != 1:
+                    self.Show_frame2(point2)
 
             # self.data_scan1 = "11111111111111111"
             # self.data_scan2 = "22222222222222222"
@@ -121,11 +140,9 @@ class MyApplication(QMainWindow):
 
         print("--> RESULT SCAN")
         logger.info("--> RESULT SCAN")
-        print(f"-----> spends {round(time.time() - stime,3)}s to read code")
 
         # IF FAIL SCAN
         if self.data_scan1 is None or self.data_scan2 is None:
-
             self.state_ui = None
 
             if self.data_scan1 is None:
@@ -133,10 +150,8 @@ class MyApplication(QMainWindow):
                     set_fail_state(self, "FAIL SN")
                     try:
                         self.update()
-                        # self.repaint()
                     except Exception as E:
                         print(E)
-                    # self.repaint()
                     self.state_ui = False
 
             if self.data_scan2 is None:
@@ -144,10 +159,8 @@ class MyApplication(QMainWindow):
                     set_fail_state(self, "FAIL FIXTURE")
                     try:
                         self.update()
-                        # self.repaint()
                     except Exception as E:
                         print(E)
-                    # self.repaint()
                     self.state_ui = False
 
             # cmd_printer("ERROR", "FAILED SCAN")
@@ -191,6 +204,8 @@ class MyApplication(QMainWindow):
             print("----------- SEND TO MES -----------")
             logger.info("----------- SEND TO MES -----------")
 
+            self.is_pushing = True
+
             # reset result_mes_operation variable
             self.result_mes_operation = [False, False]
 
@@ -203,6 +218,12 @@ class MyApplication(QMainWindow):
             stime = time.time()
             # 3 seconds to detect
             while self.WAIT_TIME > time.time() - stime:
+                # worker_locate = Worker_locate(
+                #     find_position_of_template, option=(self, 0)
+                # )
+                # worker_locate.signals.finished.connect(self.handle_matching_result)
+                # QThreadPool.globalInstance().start(worker_locate)
+
                 is_matching_1 = find_position_of_template(self, option=0)
                 if is_matching_1 == True:
                     self.result_mes_operation[0] = True
@@ -219,15 +240,14 @@ class MyApplication(QMainWindow):
                     set_fail_state(self, "FAIL MES")
                     try:
                         self.update()
-                        # self.repaint()
                     except Exception as E:
                         print(E)
-                    # self.repaint()
                     self.state_ui = False
 
             # pass sn code -> send fixture code
             if self.result_mes_operation[0] == True:
                 send_data_to_mes(self, self.data_scan2)
+
                 print(f"--> Send Data FIXTURE:  {self.data_scan2}")
                 logger.info(f"--> Send Data FIXTURE:  {self.data_scan2}")
 
@@ -249,7 +269,6 @@ class MyApplication(QMainWindow):
                         set_fail_state(self, "FAIL MES")
                         try:
                             self.update()
-                            # self.repaint()
                         except Exception as E:
                             print(E)
                         self.state_ui = False
@@ -265,11 +284,13 @@ class MyApplication(QMainWindow):
                         set_state_pass(self)
                         try:
                             self.update()
-                            # self.repaint()
                         except Exception as E:
                             print(E)
                         self.state_ui = True
                     self.set_default_variables()
+
+            self.is_pushing = False
+        print(f"use {time.time() - start_time_read} to process")
 
     def set_default_variables(self):
         self.data_scan1 = None
@@ -278,8 +299,25 @@ class MyApplication(QMainWindow):
 
     def display_frame1(self, frame):
         self.frame1 = frame
-        # frame_zoom_out = cv2.resize(frame, (320, 240))
+        if self.SHOW == 1:
+            # frame_zoom_out = cv2.resize(frame, (320, 240))
+            frame_rgb = cv2.cvtColor(self.frame1, cv2.COLOR_BGR2RGB)
+            img = QImage(
+                frame_rgb.data,
+                frame_rgb.shape[1],
+                frame_rgb.shape[0],
+                QImage.Format_RGB888,
+            )
+            scaled_pixmap = img.scaled(self.Uic.CameraFrame1.size())
+            pixmap = QPixmap.fromImage(scaled_pixmap)
+            self.Uic.CameraFrame1.setPixmap(pixmap)
+
+    def Show_frame1(self, point):
         frame_rgb = cv2.cvtColor(self.frame1, cv2.COLOR_BGR2RGB)
+        if self.data_scan1 is not None:
+            for i in range(len(point) - 1):
+                cv2.line(frame_rgb, point[i], point[i + 1], (0, 255, 0), 5)
+            cv2.line(frame_rgb, point[-1], point[0], (0, 255, 0), 5)
         img = QImage(
             frame_rgb.data, frame_rgb.shape[1], frame_rgb.shape[0], QImage.Format_RGB888
         )
@@ -289,8 +327,25 @@ class MyApplication(QMainWindow):
 
     def display_frame2(self, frame):
         self.frame2 = frame
-        # frame_zoom_out = cv2.resize(frame, (320, 240))
+        if self.SHOW == 1:
+            # frame_zoom_out = cv2.resize(frame, (320, 240))
+            frame_rgb = cv2.cvtColor(self.frame2, cv2.COLOR_BGR2RGB)
+            img = QImage(
+                frame_rgb.data,
+                frame_rgb.shape[1],
+                frame_rgb.shape[0],
+                QImage.Format_RGB888,
+            )
+            scaled_pixmap = img.scaled(self.Uic.CameraFrame2.size())
+            pixmap = QPixmap.fromImage(scaled_pixmap)
+            self.Uic.CameraFrame2.setPixmap(pixmap)
+
+    def Show_frame2(self, point):
         frame_rgb = cv2.cvtColor(self.frame2, cv2.COLOR_BGR2RGB)
+        if self.data_scan2 is not None:
+            for i in range(len(point) - 1):
+                cv2.line(frame_rgb, point[i], point[i + 1], (0, 255, 0), 5)
+            cv2.line(frame_rgb, point[-1], point[0], (0, 255, 0), 5)
         img = QImage(
             frame_rgb.data, frame_rgb.shape[1], frame_rgb.shape[0], QImage.Format_RGB888
         )
@@ -385,6 +440,41 @@ class MyApplication(QMainWindow):
             cmd_printer("ERROR", str(E))
 
     # def paintEvent(self, event):
+
+    def repaint_ui(self):
+        try:
+            print("repaint ui")
+            self.Uic.CameraFrame1.repaint()
+            self.Uic.CameraFrame2.repaint()
+            self.Uic.ResultSpan.repaint()
+        except Exception as E:
+            print("Error repaint: ", E)
+
+    def minimize_ui(self):
+        stime = time.time()
+        try:
+            if self.is_pushing == False:
+                print("minimize called!")
+                self.setWindowState(Qt.WindowMinimized)
+                self.showNormal()
+            elif self.is_pushing == True:
+                while self.is_pushing == True and time.time() - stime <= 2:
+                    time.sleep(0.2)
+                    if self.is_pushing == False:
+                        print("minimize called!")
+                        self.setWindowState(Qt.WindowMinimized)
+                        self.showNormal()
+                        break
+            # (L352, T104, R780, B136)
+            x = (780 - 352) / 2
+            y = (136 - 104) / 2
+            pyautogui.moveTo(x, y)
+            # x = 1024 / 2
+            # y = 768 / 2
+            pyautogui.click(x=x, y=y)
+
+        except Exception as E:
+            print(E)
 
 
 if __name__ == "__main__":

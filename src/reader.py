@@ -10,11 +10,36 @@ detector = cv2.wechat_qrcode_WeChatQRCode(
 )
 
 
+# def read_code_wechat(frames):
+#     for frame in frames:
+#         data, points = detector.detectAndDecode(frame)
+#         if len(data) > 0:
+#             return data[0]
+#     return read_code_pyzbar(frames)
+
+
+# def read_code_pyzbar(frames):
+#     for frame in frames:
+#         decoded_data = decode(frame, symbols=[ZBarSymbol.QRCODE])
+#         if len(decoded_data) > 0:
+#             return decoded_data[0].data.decode("utf-8")
+#     return read_code_zxingcpp(frames)
+
+
+# def read_code_zxingcpp(frames):
+#     for frame in frames:
+#         data_decodeded = zxingcpp.read_barcodes(frame)
+#         if len(data_decodeded) > 0:
+#             return data_decodeded[0].text
+#     return None
 def read_code_wechat(frames):
     for frame in frames:
         data, points = detector.detectAndDecode(frame)
         if len(data) > 0:
-            return data[0]
+            bbox = [points[0].astype(int)]
+            points = [bbox[0][0], bbox[0][1], bbox[0][2], bbox[0][3]]
+            return data[0], points
+    # return None, None
     return read_code_pyzbar(frames)
 
 
@@ -22,7 +47,13 @@ def read_code_pyzbar(frames):
     for frame in frames:
         decoded_data = decode(frame, symbols=[ZBarSymbol.QRCODE])
         if len(decoded_data) > 0:
-            return decoded_data[0].data.decode("utf-8")
+            points = [
+                (decoded_data[0].polygon[0].x, decoded_data[0].polygon[0].y),
+                (decoded_data[0].polygon[1].x, decoded_data[0].polygon[1].y),
+                (decoded_data[0].polygon[2].x, decoded_data[0].polygon[2].y),
+                (decoded_data[0].polygon[3].x, decoded_data[0].polygon[3].y),
+            ]
+            return decoded_data[0].data.decode("utf-8"), points
     return read_code_zxingcpp(frames)
 
 
@@ -30,8 +61,14 @@ def read_code_zxingcpp(frames):
     for frame in frames:
         data_decodeded = zxingcpp.read_barcodes(frame)
         if len(data_decodeded) > 0:
-            return data_decodeded[0].text
-    return None
+            coord_pairs = str(data_decodeded[0].position)
+            # print("coord_pairs", coord_pairs)
+            cleaned_pairs = coord_pairs.replace("\x00", "")
+            points = [
+                tuple(map(int, pair.split("x"))) for pair in cleaned_pairs.split()
+            ]
+            return data_decodeded[0].text, points
+    return None, None
 
 
 def process_frame1(self, frame):

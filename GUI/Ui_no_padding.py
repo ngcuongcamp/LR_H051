@@ -23,10 +23,14 @@ class Ui_MainWindow(object):
         self.centralwidget.setObjectName("centralwidget")
         self.ContentWrapper = QtWidgets.QGroupBox(self.centralwidget)
         self.ContentWrapper.setGeometry(QtCore.QRect(0, 0, 452, 222))
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.ContentWrapper.sizePolicy().hasHeightForWidth())
+        sizePolicy.setHeightForWidth(
+            self.ContentWrapper.sizePolicy().hasHeightForWidth()
+        )
         self.ContentWrapper.setSizePolicy(sizePolicy)
         self.ContentWrapper.setMinimumSize(QtCore.QSize(452, 222))
         self.ContentWrapper.setMaximumSize(QtCore.QSize(452, 222))
@@ -36,7 +40,9 @@ class Ui_MainWindow(object):
         font.setFamily("Segoe UI")
         font.setPointSize(12)
         self.ContentWrapper.setFont(font)
-        self.ContentWrapper.setStyleSheet("border: 2px solid #ccc; border-radius: 4px; background-color:rgb(237, 245, 255)")
+        self.ContentWrapper.setStyleSheet(
+            "border: 2px solid #ccc; border-radius: 4px; background-color:rgb(237, 245, 255)"
+        )
         self.ContentWrapper.setTitle("")
         self.ContentWrapper.setObjectName("ContentWrapper")
         self.CameraSpan2 = QtWidgets.QGroupBox(self.ContentWrapper)
@@ -53,8 +59,10 @@ class Ui_MainWindow(object):
         font.setItalic(False)
         font.setWeight(75)
         self.CameraLabel2.setFont(font)
-        self.CameraLabel2.setStyleSheet("\n"
-"font: 10pt \"Segoe UI\"; border: none; color: #fff; background: none; font-weight:bold; background-color:rgba(0, 170, 255,0.5)")
+        self.CameraLabel2.setStyleSheet(
+            "\n"
+            'font: 10pt "Segoe UI"; border: none; color: #fff; background: none; font-weight:bold; background-color:rgba(0, 170, 255,0.5)'
+        )
         self.CameraLabel2.setAlignment(QtCore.Qt.AlignCenter)
         self.CameraLabel2.setObjectName("CameraLabel2")
         self.CameraFrame2 = QtWidgets.QLabel(self.CameraSpan2)
@@ -78,8 +86,10 @@ class Ui_MainWindow(object):
         font.setItalic(False)
         font.setWeight(75)
         self.CameraLabel1.setFont(font)
-        self.CameraLabel1.setStyleSheet("\n"
-"font: 10pt \"Segoe UI\"; border: none; color: #fff; background: none; font-weight:bold; background-color:rgba(0, 170, 255,0.5)")
+        self.CameraLabel1.setStyleSheet(
+            "\n"
+            'font: 10pt "Segoe UI"; border: none; color: #fff; background: none; font-weight:bold; background-color:rgba(0, 170, 255,0.5)'
+        )
         self.CameraLabel1.setAlignment(QtCore.Qt.AlignCenter)
         self.CameraLabel1.setObjectName("CameraLabel1")
         self.CameraFrame1 = QtWidgets.QLabel(self.CameraSpan1)
@@ -91,31 +101,39 @@ class Ui_MainWindow(object):
         self.CameraLabel1.raise_()
         self.ResultSpan = QtWidgets.QGroupBox(self.ContentWrapper)
         self.ResultSpan.setGeometry(QtCore.QRect(2, 3, 149, 218))
-        self.ResultSpan.setStyleSheet("background-color:qlineargradient(spread:pad, x1:0, y1:0.0738636, x2:1, y2:0, stop:0 rgba(128, 128, 128, 255), stop:1 rgba(255, 255, 255, 255)); border: 1px solid rgb(85, 85, 127);")
+        self.ResultSpan.setStyleSheet(
+            "background-color:qlineargradient(spread:pad, x1:0, y1:0.0738636, x2:1, y2:0, stop:0 rgba(128, 128, 128, 255), stop:1 rgba(255, 255, 255, 255)); border: 1px solid rgb(85, 85, 127);"
+        )
         self.ResultSpan.setTitle("")
         self.ResultSpan.setObjectName("ResultSpan")
         self.ResultContent = QtWidgets.QLabel(self.ResultSpan)
         self.ResultContent.setGeometry(QtCore.QRect(1, 0, 148, 217))
-        self.ResultContent.setStyleSheet("font-size: 16px;\n"
-"font: 16pt \"Segoe UI\"; border: 1px solid #ccc; color: #999; background-color: #fff;")
+        self.ResultContent.setStyleSheet(
+            "font-size: 16px;\n"
+            'font: 16pt "Segoe UI"; border: 1px solid #ccc; color: #999; background-color: #fff;'
+        )
         self.ResultContent.setAlignment(QtCore.Qt.AlignCenter)
         self.ResultContent.setObjectName("ResultContent")
-        self.UpdateButton = QtWidgets.QPushButton(self.ResultSpan)
-        self.UpdateButton.setGeometry(QtCore.QRect(28, 185, 95, 27))
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
+        # self.UpdateButton = QtWidgets.QPushButton(self.ResultSpan)
+        # self.UpdateButton.setGeometry(QtCore.QRect(28, 185, 95, 27))
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred
+        )
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.UpdateButton.sizePolicy().hasHeightForWidth())
-        self.UpdateButton.setSizePolicy(sizePolicy)
+        # sizePolicy.setHeightForWidth(self.UpdateButton.sizePolicy().hasHeightForWidth())
+        # self.UpdateButton.setSizePolicy(sizePolicy)
         font = QtGui.QFont()
         font.setFamily("Segoe UI")
         font.setPointSize(9)
         font.setBold(True)
         font.setWeight(75)
-        self.UpdateButton.setFont(font)
-        self.UpdateButton.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.UpdateButton.setStyleSheet("background-color:rgb(0, 111, 0); color: #fff; border: 1px solid #fff; border-radius: 8px; ")
-        self.UpdateButton.setObjectName("UpdateButton")
+        # self.UpdateButton.setFont(font)
+        # self.UpdateButton.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        # self.UpdateButton.setStyleSheet(
+        #     "background-color:rgb(0, 111, 0); color: #fff; border: 1px solid #fff; border-radius: 8px; "
+        # )
+        # self.UpdateButton.setObjectName("UpdateButton")
         self.ResultLabel = QtWidgets.QLabel(self.ResultSpan)
         self.ResultLabel.setGeometry(QtCore.QRect(0, 0, 149, 33))
         font = QtGui.QFont()
@@ -125,8 +143,10 @@ class Ui_MainWindow(object):
         font.setItalic(False)
         font.setWeight(75)
         self.ResultLabel.setFont(font)
-        self.ResultLabel.setStyleSheet("\n"
-"font: 10pt \"Segoe UI\"; border: none; color: #fff; background: none; font-weight:bold; background-color: rgba(85, 170, 255,0.9)")
+        self.ResultLabel.setStyleSheet(
+            "\n"
+            'font: 10pt "Segoe UI"; border: none; color: #fff; background: none; font-weight:bold; background-color: rgba(85, 170, 255,0.9)'
+        )
         self.ResultLabel.setAlignment(QtCore.Qt.AlignCenter)
         self.ResultLabel.setObjectName("ResultLabel")
         MainWindow.setCentralWidget(self.centralwidget)
@@ -140,5 +160,5 @@ class Ui_MainWindow(object):
         self.CameraLabel2.setText(_translate("MainWindow", "CAMERA 2"))
         self.CameraLabel1.setText(_translate("MainWindow", "CAMERA 1"))
         self.ResultContent.setText(_translate("MainWindow", "NONE"))
-        self.UpdateButton.setText(_translate("MainWindow", "UPDATE"))
+        # self.UpdateButton.setText(_translate("MainWindow", "UPDATE"))
         self.ResultLabel.setText(_translate("MainWindow", "RESULT"))

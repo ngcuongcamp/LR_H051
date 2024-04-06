@@ -31,7 +31,7 @@ def initial_UI_MainWindow(self):
     self.Uic.CameraFrame2.setPixmap(scaled_pixmap)
 
     # handle click update button
-    self.Uic.UpdateButton.clicked.connect(self.handle_click_update)
+    # self.Uic.UpdateButton.clicked.connect(self.handle_click_update)
     self.show()
 
 
@@ -47,9 +47,9 @@ def set_state(
         f'background-color: {background_color}; font: 14pt "Segoe UI";border: 1px solid #ccc; color: {text_color}'
     )
     self.Uic.ResultContent.setText(result_text)
-    self.Uic.UpdateButton.setStyleSheet(
-        f"background-color: {button_background_color}; color: {button_text_color}; border: 1px solid #fff; border-radius: 8px;"
-    )
+    # self.Uic.UpdateButton.setStyleSheet(
+    #     f"background-color: {button_background_color}; color: {button_text_color}; border: 1px solid #fff; border-radius: 8px;"
+    # )
 
 
 def set_state_pass(self):
