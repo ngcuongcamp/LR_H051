@@ -28,16 +28,19 @@ class MyApplication(QMainWindow):
         initial_UI_MainWindow(self)  # initialize UI
         read_config(self)  # read config
 
-        #
-        self.timer_to_repaint = QTimer(self)
-        self.timer_to_repaint.timeout.connect(self.repaint_ui)
-        self.timer_to_repaint.start(5000)
+        #! TEST REPAINT
+        if self.IS_USE_REPAINT == 1:
+            self.timer_to_repaint = QTimer(self)
+            self.timer_to_repaint.timeout.connect(self.repaint_ui)
+            self.timer_to_repaint.start(5000)
 
-        self.timer_to_minimize = QTimer(self)
-        self.timer_to_minimize.timeout.connect(self.minimize_ui)
-        # 5 mins to refresh
-        self.timer_to_minimize.start(5 * 60 * 1000)
-        # self.timer_to_minimize.start(5000)
+        #! TEST MINIMIZE WINDOW
+        if self.IS_USE_MINIMIZE == 1:
+            self.timer_to_minimize = QTimer(self)
+            self.timer_to_minimize.timeout.connect(self.minimize_ui)
+            # 5 mins to refresh
+            # self.timer_to_minimize.start(5 * 60 * 1000)
+            self.timer_to_minimize.start(5000)
 
         # thread CAMERA
         self.open_camera_thread()
@@ -75,15 +78,6 @@ class MyApplication(QMainWindow):
     def handle_signal_plc(self, data):
         if self.THREAD_CAMERA_1.is_running and self.THREAD_CAMERA_2.is_running:
             # if data == b"1":
-            #! to try fix update here
-            # if self.IS_USE_REPAINT == 1:
-            #     print("use repaint")
-            #     try:
-            #         self.Uic.CameraFrame2.repaint()
-            #         self.Uic.CameraFrame1.repaint()
-            #         self.Uic.ResultSpan.repaint()
-            #     except Exception as E:
-            #         print(E)
 
             print("\n\n")
             print("------ SCAN SIGNAL -------")
