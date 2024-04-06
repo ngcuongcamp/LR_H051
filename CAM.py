@@ -106,7 +106,7 @@ class MyApplication(QMainWindow):
         start_time_read = time.time()
         self.set_default_variables()
 
-        if self.IS_USE_STATIC_FRAME != 1:
+        if self.IS_USE_DYNAMIC_FRAME != 1:
             self.state_ui = None
             set_default_state(self)
             self.Show_frame1(None)
@@ -117,13 +117,13 @@ class MyApplication(QMainWindow):
             if self.data_scan1 is None:
                 frames = process_frame1(self, self.frame1)
                 self.data_scan1, point1 = read_code_pyzbar(frames)
-                if self.data_scan1 and self.IS_USE_STATIC_FRAME != 1:
+                if self.data_scan1 and self.IS_USE_DYNAMIC_FRAME != 1:
                     self.Show_frame1(point1)
 
             if self.data_scan2 is None:
                 frames2 = process_frame2(self, self.frame2)
                 self.data_scan2, point2 = read_code_pyzbar(frames2)
-                if self.data_scan2 and self.IS_USE_STATIC_FRAME != 1:
+                if self.data_scan2 and self.IS_USE_DYNAMIC_FRAME != 1:
                     self.Show_frame2(point2)
 
             # self.data_scan1 = "11111111111111111"
@@ -293,7 +293,7 @@ class MyApplication(QMainWindow):
 
     def display_frame1(self, frame):
         self.frame1 = frame
-        if self.IS_USE_STATIC_FRAME == 1:
+        if self.IS_USE_DYNAMIC_FRAME == 1:
             # frame_zoom_out = cv2.resize(frame, (320, 240))
             frame_rgb = cv2.cvtColor(self.frame1, cv2.COLOR_BGR2RGB)
             img = QImage(
@@ -321,7 +321,7 @@ class MyApplication(QMainWindow):
 
     def display_frame2(self, frame):
         self.frame2 = frame
-        if self.IS_USE_STATIC_FRAME == 1:
+        if self.IS_USE_DYNAMIC_FRAME == 1:
             # frame_zoom_out = cv2.resize(frame, (320, 240))
             frame_rgb = cv2.cvtColor(self.frame2, cv2.COLOR_BGR2RGB)
             img = QImage(
