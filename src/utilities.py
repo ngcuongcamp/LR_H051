@@ -85,7 +85,7 @@ def read_config(self):
     self.COM_PLC = config["PLC"]["COM"]
     self.BAUDRATE_PLC = config["PLC"]["BAUDRATE"]
 
-    # optional settings
+    # option settings
     self.ID_C1 = int(config["CAMERA"]["IDC1"])
     self.ID_C2 = int(config["CAMERA"]["IDC2"])
     self.SCAN_LIMIT = int(config["SETTING"]["SCAN_LIMIT"])
@@ -93,7 +93,7 @@ def read_config(self):
     self.IS_SAVE_NG_IMAGE = int(config["SETTING"]["IS_SAVE_NG_IMAGE"])
     self.IS_OPEN_CAM_PROPS = int(config["SETTING"]["IS_OPEN_CAM_PROPS"])
 
-    self.SHOW = int(config["SETTING"]["SHOW"])
+    self.IS_USE_STATIC_FRAME = int(config["SETTING"]["IS_USE_STATIC_FRAME"])
     self.IS_USE_MINIMIZE = int(config["SETTING"]["IS_USE_MINIMIZE"])
     self.IS_USE_REPAINT = int(config["SETTING"]["IS_USE_REPAINT"])
     self.IS_USE_AUTOCLICK = int(config["SETTING"]["IS_USE_AUTOCLICK"])
