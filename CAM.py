@@ -36,11 +36,12 @@ class MyApplication(QMainWindow):
 
         #! TEST MINIMIZE WINDOW
         if self.IS_USE_MINIMIZE == 1:
+            self.minimize_timer_running = True
             self.timer_to_minimize = QTimer(self)
             self.timer_to_minimize.timeout.connect(self.minimize_ui)
             # 5 mins to refresh
-            self.timer_to_minimize.start(5 * 60 * 1000)
-            # self.timer_to_minimize.start(5000)
+            # self.timer_to_minimize.start(5 * 60 * 1000)
+            self.timer_to_minimize.start(5000)
 
         # thread CAMERA
         self.open_camera_thread()
@@ -163,7 +164,6 @@ class MyApplication(QMainWindow):
             self.is_processing = False
             if self.IS_SAVE_NG_IMAGE == 1:
                 if self.data_scan1 is None:
-
                     cmd_printer("ERROR", "FAILED SCAN SN")
                     image_filename = "image_NG/{}/CAMERA1/{}.png".format(
                         get_current_date(), format_current_time()
@@ -444,31 +444,67 @@ class MyApplication(QMainWindow):
         except Exception as E:
             print("Error repaint: ", E)
 
-    def minimize_ui(self):
-        stime = time.time()
-        try:
-            if self.is_pushing == False:
-                print("minimize called!")
-                self.setWindowState(Qt.WindowMinimized)
-                self.showNormal()
-            elif self.is_pushing == True:
-                while self.is_pushing == True and time.time() - stime <= 2:
-                    time.sleep(0.2)
-                    if self.is_pushing == False:
-                        print("minimize called!")
-                        self.setWindowState(Qt.WindowMinimized)
-                        self.showNormal()
-                        break
-            # (L352, T104, R780, B136)
-            x = (780 - 352) / 2
-            y = (136 - 104) / 2
-            pyautogui.moveTo(x, y)
-            # x = 1024 / 2
-            # y = 768 / 2
-            pyautogui.click(x=x, y=y)
+    # def minimize_ui(self):
+    #     print("called")
+    #     if self.minimize_timer_running:
+    #         self.timer_to_minimize.stop()
+    #         self.minimize_timer_running = False
 
-        except Exception as E:
-            print(E)
+    #         stime = time.time()
+    #         try:
+    #             if self.is_pushing == False:
+    #                 print("minimize called!")
+    #                 self.setWindowState(Qt.WindowMinimized)
+    #                 self.showNormal()
+    #             elif self.is_pushing == True:
+    #                 while self.is_pushing == True and time.time() - stime <= 2:
+    #                     time.sleep(0.2)
+    #                     if self.is_pushing == False:
+    #                         print("minimize called!")
+    #                         self.setWindowState(Qt.WindowMinimized)
+    #                         self.showNormal()
+    #                         break
+    #             # (L352, T104, R780, B136)
+    #             x = (780 - 352) / 2
+    #             y = (136 - 104) / 2
+    #             pyautogui.moveTo(x, y)
+    #             # x = 1024 / 2
+    #             # y = 768 / 2
+    #             pyautogui.click(x=x, y=y)
+
+    #             self.timer_to_minimize.start(5 * 60 * 1000)
+    #             # self.timer_to_minimize.start(5000)
+    #             self.minimize_timer_running = True
+
+    #         except Exception as E:
+    #             print(E)
+
+    def minimize_ui(self):
+        if self.minimize_timer_running:
+            self.timer_to_minimize.stop()
+            self.minimize_timer_running = False
+
+            stime = time.time()
+            try:
+                if self.is_pushing == False:
+                    print("minimize called!")
+                    self.hide()
+                    self.show()
+                elif self.is_pushing == True:
+                    while self.is_pushing == True and time.time() - stime <= 2:
+                        time.sleep(0.2)
+                        if self.is_pushing == False:
+                            print("minimize called!")
+                            self.hide()
+                            self.show()
+                            break
+
+                # self.timer_to_minimize.start(5 * 60 * 1000)
+                self.timer_to_minimize.start(5000)
+                self.minimize_timer_running = True
+
+            except Exception as E:
+                print(E)
 
 
 if __name__ == "__main__":
