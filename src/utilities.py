@@ -107,6 +107,16 @@ def read_config(self):
     self.C1 = int(config["THRESH"]["C1"])
     self.C2 = int(config["THRESH"]["C2"])
 
+    self.MIN_THRESH_1 = int(config["THRESH"]["MIN_THRESH_1"])
+    self.MAX_THRESH_1 = int(config["THRESH"]["MAX_THRESH_1"])
+    self.SPACE_THRESH_1 = int(config["THRESH"]["SPACE_THRESH_1"])
+
+    self.MIN_THRESH_2 = int(config["THRESH"]["MIN_THRESH_2"])
+    self.MAX_THRESH_2 = int(config["THRESH"]["MAX_THRESH_2"])
+    self.SPACE_THRESH_2 = int(config["THRESH"]["SPACE_THRESH_2"])
+
+    print(self.MIN_THRESH_1)
+
     # MES config
     self.TIME_SLEEP = float(config["MES"]["TIME_SLEEP"])
     self.WAIT_TIME = float(config["MES"]["WAIT_TIME"])

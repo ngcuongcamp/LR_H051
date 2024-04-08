@@ -32,16 +32,16 @@ class MyApplication(QMainWindow):
         if self.IS_USE_REPAINT == 1:
             self.timer_to_repaint = QTimer(self)
             self.timer_to_repaint.timeout.connect(self.repaint_ui)
-            self.timer_to_repaint.start(5000)
+            self.timer_to_repaint.start(10000)
 
         #! TEST MINIMIZE WINDOW
         if self.IS_USE_MINIMIZE == 1:
             self.minimize_timer_running = True
             self.timer_to_minimize = QTimer(self)
             self.timer_to_minimize.timeout.connect(self.minimize_ui)
-            # 5 mins to refresh
-            # self.timer_to_minimize.start(5 * 60 * 1000)
-            self.timer_to_minimize.start(5000)
+            # 3 mins to refresh
+            self.timer_to_minimize.start(3 * 60 * 1000)
+            # self.timer_to_minimize.start(5000)
 
         # thread CAMERA
         self.open_camera_thread()
@@ -113,22 +113,36 @@ class MyApplication(QMainWindow):
             self.Show_frame1(None)
             self.Show_frame2(None)
         i = 0
-        while i < self.SCAN_LIMIT:
+        while i < self.SCAN_LIMIT:  # 3
+            print("stt loop: ", i + 1)
             i = i + 1
             if self.data_scan1 is None:
                 frames = process_frame1(self, self.frame1)
-                self.data_scan1, point1 = read_code_pyzbar(frames)
+                self.data_scan1, point1 = read_code_zxingcpp(frames)
+                if self.data_scan1 is None:
+                    self.data_scan1, point1 = loop_thresh_frame(
+                        self,
+                        frames,
+                        self.MIN_THRESH_1,
+                        self.MAX_THRESH_1,
+                        self.SPACE_THRESH_1,
+                    )
                 if self.data_scan1 and self.IS_USE_DYNAMIC_FRAME != 1:
                     self.Show_frame1(point1)
 
             if self.data_scan2 is None:
                 frames2 = process_frame2(self, self.frame2)
-                self.data_scan2, point2 = read_code_pyzbar(frames2)
+                self.data_scan2, point2 = read_code_zxingcpp(frames2)
+                if self.data_scan2 is None:
+                    self.data_scan2, point2 = loop_thresh_frame(
+                        self,
+                        frames2,
+                        self.MIN_THRESH_2,
+                        self.MAX_THRESH_2,
+                        self.SPACE_THRESH_2,
+                    )
                 if self.data_scan2 and self.IS_USE_DYNAMIC_FRAME != 1:
                     self.Show_frame2(point2)
-
-            # self.data_scan1 = "11111111111111111"
-            # self.data_scan2 = "22222222222222222"
 
             if self.data_scan1 is not None and self.data_scan2 is not None:
                 break
@@ -212,12 +226,6 @@ class MyApplication(QMainWindow):
             stime = time.time()
             # 3 seconds to detect
             while self.WAIT_TIME > time.time() - stime:
-                # worker_locate = Worker_locate(
-                #     find_position_of_template, option=(self, 0)
-                # )
-                # worker_locate.signals.finished.connect(self.handle_matching_result)
-                # QThreadPool.globalInstance().start(worker_locate)
-
                 is_matching_1 = find_position_of_template(self, option=0)
                 if is_matching_1 == True:
                     self.result_mes_operation[0] = True
@@ -294,7 +302,6 @@ class MyApplication(QMainWindow):
     def display_frame1(self, frame):
         self.frame1 = frame
         if self.IS_USE_DYNAMIC_FRAME == 1:
-            # frame_zoom_out = cv2.resize(frame, (320, 240))
             frame_rgb = cv2.cvtColor(self.frame1, cv2.COLOR_BGR2RGB)
             img = QImage(
                 frame_rgb.data,
@@ -322,7 +329,6 @@ class MyApplication(QMainWindow):
     def display_frame2(self, frame):
         self.frame2 = frame
         if self.IS_USE_DYNAMIC_FRAME == 1:
-            # frame_zoom_out = cv2.resize(frame, (320, 240))
             frame_rgb = cv2.cvtColor(self.frame2, cv2.COLOR_BGR2RGB)
             img = QImage(
                 frame_rgb.data,
@@ -444,41 +450,6 @@ class MyApplication(QMainWindow):
         except Exception as E:
             print("Error repaint: ", E)
 
-    # def minimize_ui(self):
-    #     print("called")
-    #     if self.minimize_timer_running:
-    #         self.timer_to_minimize.stop()
-    #         self.minimize_timer_running = False
-
-    #         stime = time.time()
-    #         try:
-    #             if self.is_pushing == False:
-    #                 print("minimize called!")
-    #                 self.setWindowState(Qt.WindowMinimized)
-    #                 self.showNormal()
-    #             elif self.is_pushing == True:
-    #                 while self.is_pushing == True and time.time() - stime <= 2:
-    #                     time.sleep(0.2)
-    #                     if self.is_pushing == False:
-    #                         print("minimize called!")
-    #                         self.setWindowState(Qt.WindowMinimized)
-    #                         self.showNormal()
-    #                         break
-    #             # (L352, T104, R780, B136)
-    #             x = (780 - 352) / 2
-    #             y = (136 - 104) / 2
-    #             pyautogui.moveTo(x, y)
-    #             # x = 1024 / 2
-    #             # y = 768 / 2
-    #             pyautogui.click(x=x, y=y)
-
-    #             self.timer_to_minimize.start(5 * 60 * 1000)
-    #             # self.timer_to_minimize.start(5000)
-    #             self.minimize_timer_running = True
-
-    #         except Exception as E:
-    #             print(E)
-
     def minimize_ui(self):
         if self.minimize_timer_running:
             self.timer_to_minimize.stop()
@@ -487,20 +458,20 @@ class MyApplication(QMainWindow):
             stime = time.time()
             try:
                 if self.is_pushing == False:
-                    print("minimize called!")
+                    print("minimize_ui called!")
                     self.hide()
                     self.show()
                 elif self.is_pushing == True:
                     while self.is_pushing == True and time.time() - stime <= 2:
                         time.sleep(0.2)
                         if self.is_pushing == False:
-                            print("minimize called!")
+                            print("minimize_ui called!")
                             self.hide()
                             self.show()
                             break
 
-                # self.timer_to_minimize.start(5 * 60 * 1000)
-                self.timer_to_minimize.start(5000)
+                self.timer_to_minimize.start(3 * 60 * 1000)
+                # self.timer_to_minimize.start(5000)
                 self.minimize_timer_running = True
 
             except Exception as E:
