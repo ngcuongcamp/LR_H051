@@ -1,0 +1,23 @@
+2024-04-09 08:03:13,528 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-09 08:03:13,528 - INFO - --> Received scan signal from PLC
+2024-04-09 08:03:13,528 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-09 08:03:13,691 - INFO - --> RESULT SCAN
+2024-04-09 08:03:13,692 - INFO - PASS SCAN
+2024-04-09 08:03:13,692 - INFO - ----------- SEND TO MES -----------
+2024-04-09 08:03:13,822 - WARNING - Received signal PLC when program is processing.
+2024-04-09 08:03:13,837 - WARNING - Received signal PLC when program is processing.
+2024-04-09 08:03:14,149 - INFO - --> Send Data SN:  RL4GP661XD
+2024-04-09 08:03:14,157 - WARNING - Received signal PLC when program is processing.
+2024-04-09 08:03:25,165 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-09 08:03:25,165 - INFO - --> Received scan signal from PLC
+2024-04-09 08:03:25,165 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-09 08:03:25,444 - INFO - --> RESULT SCAN
+2024-04-09 08:03:25,444 - ERROR - FAILED
+2024-04-09 08:04:08,379 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-09 08:04:08,379 - INFO - --> Received scan signal from PLC
+2024-04-09 08:04:08,379 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-09 08:04:08,633 - INFO - --> RESULT SCAN
+2024-04-09 08:04:08,634 - ERROR - FAILED
