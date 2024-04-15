@@ -42,17 +42,20 @@ class PLCThread(QThread):
                     data = self.serial_port.readline()
 
                     if len(data) > 0:
-                        if self.main_ref.is_processing == False:
-                            self.main_ref.is_processing = True
-                            self.data_received.emit(data)
-                        elif self.main_ref.is_processing:
-                            cmd_printer(
-                                "WARNING",
-                                "Received signal PLC when program is processing.",
-                            )
-                            logger.warning(
-                                "Received signal PLC when program is processing."
-                            )
+                        # if self.main_ref.is_processing == False:
+                        #     self.main_ref.is_processing = True
+                        #     self.data_received.emit(data)
+                        # elif self.main_ref.is_processing:
+                        #     cmd_printer(
+                        #         "WARNING",
+                        #         "Received signal PLC when program is processing.",
+                        #     )
+                        #     logger.warning(
+                        #         "Received signal PLC when program is processing."
+                        #     )
+
+                        self.main_ref.is_processing = True
+                        self.data_received.emit(data)
 
                         # self.data_received.emit(data)
 

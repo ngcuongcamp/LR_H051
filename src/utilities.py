@@ -95,6 +95,7 @@ def read_config(self):
 
     self.IS_USE_DYNAMIC_FRAME = int(config["SETTING"]["IS_USE_DYNAMIC_FRAME"])
     self.IS_USE_MINIMIZE = int(config["SETTING"]["IS_USE_MINIMIZE"])
+    self.TIME_TO_HIDE_WINDOW = int(config["SETTING"]["TIME_TO_HIDE_WINDOW"])
     self.IS_USE_REPAINT = int(config["SETTING"]["IS_USE_REPAINT"])
     self.IS_USE_AUTOCLICK = int(config["SETTING"]["IS_USE_AUTOCLICK"])
 
@@ -114,8 +115,6 @@ def read_config(self):
     self.MIN_THRESH_2 = int(config["THRESH"]["MIN_THRESH_2"])
     self.MAX_THRESH_2 = int(config["THRESH"]["MAX_THRESH_2"])
     self.SPACE_THRESH_2 = int(config["THRESH"]["SPACE_THRESH_2"])
-
-    print(self.MIN_THRESH_1)
 
     # MES config
     self.TIME_SLEEP = float(config["MES"]["TIME_SLEEP"])

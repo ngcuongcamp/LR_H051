@@ -47,6 +47,19 @@ def read_code_zxingcpp(frames):
     return read_code_pyzbar(frames)
 
 
+def only_read_zxingcpp(frames):
+    for frame in frames:
+        data_decodeded = zxingcpp.read_barcodes(frame)
+        if len(data_decodeded) > 0:
+            coord_pairs = str(data_decodeded[0].position)
+            cleaned_pairs = coord_pairs.replace("\x00", "")
+            points = [
+                tuple(map(int, pair.split("x"))) for pair in cleaned_pairs.split()
+            ]
+            return data_decodeded[0].text, points
+    return None, None
+
+
 def process_frame1(self, frame):
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
     blurred = cv2.GaussianBlur(gray, (3, 3), 0)
@@ -68,13 +81,13 @@ def process_frame2(self, frame):
 def loop_thresh_frame(self, frames, min_thresh, max_thresh, space_thresh):
     data = None
     for frame in frames:
-        print("for running")
+        print("for loop running")
         for thresh_value in range(min_thresh, max_thresh, space_thresh):
 
             _, thresh_frame = cv2.threshold(
                 frame, thresh_value, max_thresh, cv2.THRESH_BINARY
             )
-            data, point = read_code_zxingcpp([thresh_frame])
+            data, point = only_read_zxingcpp([thresh_frame])
 
             if data is not None:
                 print("thresh value: ", thresh_value)

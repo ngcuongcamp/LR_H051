@@ -21,30 +21,30 @@ class MyApplication(QMainWindow):
     def __init__(self):
         super().__init__()
         self.is_update_cam_error = True
-        self.is_processing = False
+        # self.is_processing = False
         self.state_ui = None
-        self.is_pushing = False
 
         initial_UI_MainWindow(self)  # initialize UI
         read_config(self)  # read config
 
-        #! TEST REPAINT
-        if self.IS_USE_REPAINT == 1:
-            self.timer_to_repaint = QTimer(self)
-            self.timer_to_repaint.timeout.connect(self.repaint_ui)
-            self.timer_to_repaint.start(10000)
+        # #! TEST REPAINT
+        # if self.IS_USE_REPAINT == 1:
+        #     self.timer_to_repaint = QTimer(self)
+        #     self.timer_to_repaint.timeout.connect(self.repaint_ui)
+        #     self.timer_to_repaint.start(10000)
 
         #! TEST MINIMIZE WINDOW
         if self.IS_USE_MINIMIZE == 1:
             self.minimize_timer_running = True
             self.timer_to_minimize = QTimer(self)
             self.timer_to_minimize.timeout.connect(self.minimize_ui)
-            # 3 mins to refresh
-            self.timer_to_minimize.start(3 * 60 * 1000)
-            # self.timer_to_minimize.start(5000)
+            # 5 mins to refresh
+            # self.timer_to_minimize.start(5 * 60 * 1000)
+            self.timer_to_minimize.start(self.TIME_TO_HIDE_WINDOW * 60 * 1000)
 
         # thread CAMERA
         self.open_camera_thread()
+
         self.check_error_camera = QTimer()
         self.check_error_camera.timeout.connect(self.reconnect_camera_thread)
         self.check_error_camera.start(1000)
@@ -174,8 +174,8 @@ class MyApplication(QMainWindow):
 
             # cmd_printer("ERROR", "FAILED SCAN")
             logger.error("FAILED")
-            self.THREAD_PLC.send_signal_to_plc(b"2")
-            self.is_processing = False
+            self.THREAD_PLC.send_signal_to_plc(b"3")
+            # self.is_processing = False
             if self.IS_SAVE_NG_IMAGE == 1:
                 if self.data_scan1 is None:
                     cmd_printer("ERROR", "FAILED SCAN SN")
@@ -212,8 +212,6 @@ class MyApplication(QMainWindow):
             print("----------- SEND TO MES -----------")
             logger.info("----------- SEND TO MES -----------")
 
-            self.is_pushing = True
-
             # reset result_mes_operation variable
             self.result_mes_operation = [False, False]
 
@@ -235,8 +233,8 @@ class MyApplication(QMainWindow):
             # fail sn code
             if is_matching_1 == False:
                 self.result_mes_operation[0] = False
-                self.THREAD_PLC.send_signal_to_plc(b"2")
-                self.is_processing = False
+                self.THREAD_PLC.send_signal_to_plc(b"3")
+                # self.is_processing = False
                 cmd_printer("ERROR", "SIGNAL FAIL CHECK SN CODE FROM mes")
                 if self.state_ui in [True, None]:
                     set_fail_state(self, "FAIL MES")
@@ -264,8 +262,8 @@ class MyApplication(QMainWindow):
 
                 if is_matching_2 == False:
                     self.result_mes_operation[0] = False
-                    self.THREAD_PLC.send_signal_to_plc(b"2")
-                    self.is_processing = False
+                    self.THREAD_PLC.send_signal_to_plc(b"3")
+                    # self.is_processing = False
                     cmd_printer("ERROR", "SIGNAL FAIL CHECK FIXTURE CODE FROM mes")
                     if self.state_ui in [True, None]:
                         set_fail_state(self, "FAIL MES")
@@ -280,8 +278,8 @@ class MyApplication(QMainWindow):
                     logger.info("------PASS MES-------")
                     logger.info(f"Data SN: {self.data_scan1}")
                     logger.info(f"Data FIXTURE: {self.data_scan2}")
-                    self.THREAD_PLC.send_signal_to_plc(b"1")
-                    self.is_processing = False
+                    self.THREAD_PLC.send_signal_to_plc(b"2")
+                    # self.is_processing = False
                     if self.state_ui in [False, None]:
                         set_state_pass(self)
                         try:
@@ -291,7 +289,6 @@ class MyApplication(QMainWindow):
                         self.state_ui = True
                     self.set_default_variables()
 
-            self.is_pushing = False
         print(f"use {time.time() - start_time_read} to process")
 
     def set_default_variables(self):
@@ -390,7 +387,7 @@ class MyApplication(QMainWindow):
     def open_camera_thread(self):
 
         # thread camera 1
-        self.THREAD_CAMERA_1 = CameraThread(self.ID_C1)
+        self.THREAD_CAMERA_1 = CameraThread(self.ID_C1, ref=self)
         self.THREAD_CAMERA_1.frame_received.connect(self.display_frame1)
         self.THREAD_CAMERA_1.start()
         self.THREAD_CAMERA_1.cap.set(cv2.CAP_PROP_SATURATION, 0)
@@ -401,10 +398,10 @@ class MyApplication(QMainWindow):
             self.update_status_camera_error
         )
         # thread camera 2
-        self.THREAD_CAMERA_2 = CameraThread(self.ID_C2)
+        self.THREAD_CAMERA_2 = CameraThread(self.ID_C2, ref=self)
         self.THREAD_CAMERA_2.frame_received.connect(self.display_frame2)
         self.THREAD_CAMERA_2.start()
-        self.THREAD_CAMERA_1.cap.set(cv2.CAP_PROP_EXPOSURE, self.PROP_EXPOSURE_2)
+        self.THREAD_CAMERA_2.cap.set(cv2.CAP_PROP_EXPOSURE, self.PROP_EXPOSURE_2)
 
         if self.IS_OPEN_CAM_PROPS == 1:
             self.THREAD_CAMERA_2.cap.set(cv2.CAP_PROP_SETTINGS, 1)
@@ -454,24 +451,13 @@ class MyApplication(QMainWindow):
         if self.minimize_timer_running:
             self.timer_to_minimize.stop()
             self.minimize_timer_running = False
-
-            stime = time.time()
             try:
-                if self.is_pushing == False:
-                    print("minimize_ui called!")
-                    self.hide()
-                    self.show()
-                elif self.is_pushing == True:
-                    while self.is_pushing == True and time.time() - stime <= 2:
-                        time.sleep(0.2)
-                        if self.is_pushing == False:
-                            print("minimize_ui called!")
-                            self.hide()
-                            self.show()
-                            break
+                print("minimize_ui called!")
+                self.hide()
+                self.show()
 
-                self.timer_to_minimize.start(3 * 60 * 1000)
-                # self.timer_to_minimize.start(5000)
+                # self.timer_to_minimize.start(5 * 60 * 1000)
+                self.timer_to_minimize.start(self.TIME_TO_HIDE_WINDOW * 60 * 1000)
                 self.minimize_timer_running = True
 
             except Exception as E:

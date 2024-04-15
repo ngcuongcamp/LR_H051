@@ -1,0 +1,109 @@
+2024-04-15 08:18:42,502 - ERROR - CAM ERROR
+2024-04-15 08:18:42,505 - ERROR - Camera Error
+2024-04-15 08:18:54,684 - ERROR - Camera Error
+2024-04-15 08:18:54,689 - ERROR - CAM ERROR
+2024-04-15 08:19:24,492 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-15 08:19:24,492 - INFO - --> Received scan signal from PLC
+2024-04-15 08:19:24,492 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-15 08:19:25,998 - INFO - --> RESULT SCAN
+2024-04-15 08:19:25,999 - ERROR - FAILED
+2024-04-15 08:19:26,012 - ERROR - ------FAIL SCAN-------
+2024-04-15 08:19:26,012 - ERROR - Data SN: None
+2024-04-15 08:19:26,012 - ERROR - Data FIXTURE: None
+2024-04-15 08:19:27,347 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-15 08:19:27,347 - INFO - --> Received scan signal from PLC
+2024-04-15 08:19:27,348 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-15 08:19:28,138 - INFO - --> RESULT SCAN
+2024-04-15 08:19:28,138 - ERROR - FAILED
+2024-04-15 08:19:28,142 - ERROR - ------FAIL SCAN-------
+2024-04-15 08:19:28,142 - ERROR - Data SN: CC2VJRVGJP
+2024-04-15 08:19:28,143 - ERROR - Data FIXTURE: None
+2024-04-15 08:19:29,435 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-15 08:19:29,435 - INFO - --> Received scan signal from PLC
+2024-04-15 08:19:29,435 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-15 08:19:30,436 - INFO - --> RESULT SCAN
+2024-04-15 08:19:30,436 - ERROR - FAILED
+2024-04-15 08:19:30,440 - ERROR - ------FAIL SCAN-------
+2024-04-15 08:19:30,440 - ERROR - Data SN: CC2VJRVGJP
+2024-04-15 08:19:30,440 - ERROR - Data FIXTURE: None
+2024-04-15 08:19:35,575 - ERROR - CAM ERROR
+2024-04-15 08:19:35,582 - ERROR - Camera Error
+2024-04-15 08:19:39,046 - WARNING - Received signal PLC when program is processing.
+2024-04-15 08:19:39,245 - WARNING - Received signal PLC when program is processing.
+2024-04-15 08:19:39,485 - WARNING - Received signal PLC when program is processing.
+2024-04-15 08:19:39,828 - WARNING - Received signal PLC when program is processing.
+2024-04-15 08:19:40,100 - WARNING - Received signal PLC when program is processing.
+2024-04-15 08:19:40,413 - WARNING - Received signal PLC when program is processing.
+2024-04-15 08:19:45,361 - ERROR - CAM ERROR
+2024-04-15 08:19:45,363 - ERROR - Camera Error
+2024-04-15 08:19:49,793 - WARNING - Received signal PLC when program is processing.
+2024-04-15 08:19:51,117 - WARNING - Received signal PLC when program is processing.
+2024-04-15 08:19:51,397 - WARNING - Received signal PLC when program is processing.
+2024-04-15 08:19:51,600 - WARNING - Received signal PLC when program is processing.
+2024-04-15 08:19:51,805 - WARNING - Received signal PLC when program is processing.
+2024-04-15 08:19:52,037 - WARNING - Received signal PLC when program is processing.
+2024-04-15 08:19:52,300 - WARNING - Received signal PLC when program is processing.
+2024-04-15 08:19:52,534 - WARNING - Received signal PLC when program is processing.
+2024-04-15 08:20:37,029 - ERROR - Connect PLC Error: 'MyApplication' object has no attribute 'is_processing'
+2024-04-15 08:20:53,232 - ERROR - Connect PLC Error: 'MyApplication' object has no attribute 'is_processing'
+2024-04-15 08:21:39,576 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-15 08:21:39,576 - INFO - --> Received scan signal from PLC
+2024-04-15 08:21:39,576 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-15 08:21:40,311 - INFO - --> RESULT SCAN
+2024-04-15 08:21:40,312 - ERROR - FAILED
+2024-04-15 08:21:40,316 - ERROR - ------FAIL SCAN-------
+2024-04-15 08:21:40,316 - ERROR - Data SN: CC2VJRVGJP
+2024-04-15 08:21:40,316 - ERROR - Data FIXTURE: None
+2024-04-15 08:21:41,983 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-15 08:21:41,983 - INFO - --> Received scan signal from PLC
+2024-04-15 08:21:41,983 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-15 08:21:42,171 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-15 08:21:42,171 - INFO - --> Received scan signal from PLC
+2024-04-15 08:21:42,171 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-15 08:21:42,763 - INFO - --> RESULT SCAN
+2024-04-15 08:21:42,763 - ERROR - FAILED
+2024-04-15 08:21:42,768 - ERROR - ------FAIL SCAN-------
+2024-04-15 08:21:42,768 - ERROR - Data SN: CC2VJRVGJP
+2024-04-15 08:21:42,768 - ERROR - Data FIXTURE: None
+2024-04-15 08:21:42,932 - INFO - --> RESULT SCAN
+2024-04-15 08:21:42,933 - ERROR - FAILED
+2024-04-15 08:21:42,937 - ERROR - ------FAIL SCAN-------
+2024-04-15 08:21:42,937 - ERROR - Data SN: CC2VJRVGJP
+2024-04-15 08:21:42,937 - ERROR - Data FIXTURE: None
+2024-04-15 08:21:43,897 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-15 08:21:43,897 - INFO - --> Received scan signal from PLC
+2024-04-15 08:21:43,897 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-15 08:21:44,595 - INFO - --> RESULT SCAN
+2024-04-15 08:21:44,595 - ERROR - FAILED
+2024-04-15 08:21:44,600 - ERROR - ------FAIL SCAN-------
+2024-04-15 08:21:44,600 - ERROR - Data SN: CC2VJRVGJP
+2024-04-15 08:21:44,600 - ERROR - Data FIXTURE: None
+2024-04-15 08:21:47,955 - ERROR - CAM ERROR
+2024-04-15 08:21:47,956 - ERROR - Camera Error
+2024-04-15 08:22:02,008 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-15 08:22:02,008 - INFO - --> Received scan signal from PLC
+2024-04-15 08:22:02,008 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-15 08:22:02,700 - INFO - --> RESULT SCAN
+2024-04-15 08:22:02,700 - ERROR - FAILED
+2024-04-15 08:22:02,704 - ERROR - ------FAIL SCAN-------
+2024-04-15 08:22:02,704 - ERROR - Data SN: CC2VJRVGJP
+2024-04-15 08:22:02,704 - ERROR - Data FIXTURE: None
+2024-04-15 08:22:08,201 - ERROR - CAM ERROR
+2024-04-15 08:22:08,207 - ERROR - Camera Error
+2024-04-15 08:22:17,989 - INFO - 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+2024-04-15 08:22:17,989 - INFO - --> Received scan signal from PLC
+2024-04-15 08:22:17,989 - INFO - --> ------ SCAN SIGNAL -------
+2024-04-15 08:22:18,684 - INFO - --> RESULT SCAN
+2024-04-15 08:22:18,684 - ERROR - FAILED
+2024-04-15 08:22:18,688 - ERROR - ------FAIL SCAN-------
+2024-04-15 08:22:18,688 - ERROR - Data SN: CC2VJRVGJP
+2024-04-15 08:22:18,688 - ERROR - Data FIXTURE: None
